@@ -1,0 +1,103 @@
+{
+    "personal-info": {
+        "name": "Gabriel Ramos de Sousa",
+        "email": "gabrielramos.email@gmail.com",
+        "phone": "+55 32 9 9139-5135",
+        "github": "https://github.com/GabrielDSousa",
+        "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
+        "location": "Juiz de Fora, MG, Brasil"
+    },
+    "professional-summary": {
+        "title": "Desenvolvedor Full-Stack PHP",
+        "summary": "Desenvolvedor Full-Stack PHP orientado a resultados com quase 4 anos de experiência na criação de aplicações e APIs eficientes. Histórico comprovado em ambientes de equipe colaborativos, entregando soluções centradas no usuário dentro do prazo e escopo."
+    },
+    "work-experience": [
+        {
+            "company": "SoftExpert",
+            "company-description": "Líder de mercado de soluções integradas para gestão de conformidade.",
+            "location": "Remoto, Brasil",
+            "title": "Desenvolvedor Full Stack PHP",
+            "date": "04/2023 - 12/2023",
+            "description": "Contribui para o avanço de uma nova iteração da plataforma.",
+            "milestones": [
+                "Projetei e implementei modificações personalizadas no sistema para 8 clientes-chave, resultando em um aumento de 7% na satisfação geral do cliente.",
+                "Desenvolvi APIs Restful para um sistema unificado de notificação, abrangendo SMS, e-mail e integração à plataforma.",
+                "Liderei a migração de sistemas legados para uma interface moderna em React, melhorando os tempos de carregamento da página em 15%.",
+                "Realizei tarefas proativas de manutenção, garantindo uma redução de 7% nos problemas relatados.",
+                "Colaborei com equipes multidisciplinares, resultando em uma implementação 30% mais rápida de funcionalidades solicitadas pelo cliente.",
+                "Participei de uma Hackathon presencial, alcançando um marco de conclusão de 50% do desenvolvimento de ferramentas inovadoras programadas para implementação na próxima versão."
+            ]
+        },
+        {
+            "company": "DomvsIt",
+            "company-description": "Empresa global de consultoria em TI e soluções de software.",
+            "location": "Remoto, Brasil",
+            "title": "Desenvolvedor Full Stack PHP",
+            "date": "07/2022 - 12/2022",
+            "description": "Contribuiu para o avanço de uma nova versão da plataforma.",
+            "milestones": [
+                "Desenvolveu e manteve uma aplicação web para o cliente Finnet fintech, resultando em um aumento de 12% na participação do usuário.",
+                "Colaborou na atualização da plataforma de entrega de SMS, alcançando um aumento de 20% nas taxas de sucesso na entrega de SMS.",
+                "Resolveu com sucesso um bug de alta prioridade que causava atrasos em lembretes de pagamento, resultando em uma redução de 80% nas reclamações dos clientes.",
+                "Implementou alertas de mudança de política usando Vue.js, levando a um aumento de 45% na conscientização do usuário.",
+                "Integrou um chatbot de atendimento ao cliente impulsionado por API, resultando em uma redução de 20% nas consultas de suporte ao cliente.",
+                "Reforçou a segurança do servidor com regras CORS mais rigorosas, diminuindo os incidentes relacionados à segurança em 5%."
+            ]
+        },
+        {
+            "company": "Printi",
+            "company-description": "Empresa brasileira de comércio eletrônico que oferece serviços de impressão.",
+            "location": "Remoto, Brasil",
+            "title": "Desenvolvedor Júnior Full Stack PHP",
+            "date": "03/2022 - 06/2022",
+            "description": "Contribuiu para aprimorar a responsividade e robustez do sistema.",
+            "milestones" : [
+                "Aumentou a estabilidade e confiabilidade do sistema, aumentando a cobertura de testes unitários em 17% no primeiro trimestre.",
+                "Fomentou um ambiente de desenvolvimento colaborativo, organizando sessões globais de programação para compartilhamento de conhecimento entre equipes.",
+                "Implantou e integrou um sistema de notificação para novos designs, resultando em um aumento de 7% na satisfação do cliente."
+            ]
+        },
+        {
+            "company": "Reportei",
+            "company-description": "Startup brasileira que oferece uma ferramenta de relatórios de mídia social.",
+            "location": "Remoto, Brasil",
+            "title": "Desenvolvedor Júnior Full Stack PHP",
+            "date": "01/2021 - 03/2022",
+            "description": "Desempenhou um papel fundamental no desenvolvimento de novos recursos e manutenção do produto SaaS.",
+            "milestones": [
+                "Concebeu e implementou novos recursos para a aplicação web de relatórios de marketing personalizados, resultando em um aumento de 7% na participação do usuário.",
+                "Criou páginas de pagamento usando Laravel, Blade e Livewire, resultando em um aumento de 22% nas taxas de sucesso das transações.",
+                "Liderou um projeto de intenção de saída usando Javascript, contribuindo para um aumento de 7% na retenção de clientes.",
+                "Abordou problemas de reatividade em páginas de relatórios dinâmicos usando Vue.js, resultando em uma redução de 8% nos tempos de carregamento da página.",
+                "Otimizou o processo de geração de relatórios, resultando em uma redução de 12% no tempo de geração de relatórios.",
+                "Colaborou com a equipe para implementar melhorias de desempenho em todo o banco de dados."
+            ]
+        },
+        {
+            "company": "App Masters",
+            "company-description": "Startup local brasileira que oferece consultoria em TI e soluções de software.",
+            "location": "Juiz de Fora, MG, Brasil",
+            "title": "Estagiário Back-end PHP",
+            "date": "08/2018 - 10/2018",
+            "description": "Desempenhou um papel chave no desenvolvimento inicial de um novo produto.",
+            "milestones": [
+                "Liderou o desenvolvimento de uma abrangente API RESTful para uma plataforma de criação de sites, utilizando Lumen e MySQL.",
+                "Pioneirou a adoção de princípios de Desenvolvimento Orientado a Testes (TDD) usando PHPUnit.",
+                "Orquestrou o controle de versão usando Git, facilitando o desenvolvimento colaborativo e mantendo um repositório de código bem organizado."
+            ]
+        },
+        {
+            "company": "Grupo Voitto",
+            "company-description": "Empresa local brasileira que oferece cursos online e serviços de consultoria sobre Lean Six Sigma.",
+            "location": "Juiz de Fora, MG, Brasil",
+            "title": "Estagiário Full Stack PHP",
+            "date": "03/2018 - 07/2018",
+            "description": "Desenvolveu novos recursos e realizou manutenção para o site do curso.",
+            "milestones": [
+                "Abordou proativamente e resolveu bugs relatados pelos clientes na plataforma de vídeos dos cursos de gestão Lean Six Sigma.",
+                "Colaborou com a equipe de pesquisa para inovar e implementar um sistema de gamificação vinculado ao tempo de conclusão do curso.",
+                "Utilizou o framework Codeigniter para construir e otimizar a plataforma de vídeo para cursos de gestão Lean Six Sigma."
+            ]
+        }
+    ]
+}

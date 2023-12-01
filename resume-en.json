@@ -1,0 +1,103 @@
+{
+    "personal-info": {
+        "name": "Gabriel Ramos de Sousa",
+        "email": "gabrielramos.email@gmail.com",
+        "phone": "+55 32 9 9139-5135",
+        "github": "https://github.com/GabrielDSousa",
+        "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
+        "location": "Juiz de Fora, MG, Brazil"
+    },
+    "professional-summary": {
+        "title": "PHP Full-Stack Developer",
+        "summary": "Results-driven PHP Full-Stack Developer with almost 4 years of expertise in crafting efficient applications and APIs. Proven track record in collaborative team environments, delivering user-focused solutions on time and within scope."
+    },
+    "work-experience": [
+        {
+            "company": "SoftExpert",
+            "company-description": "A market-leading enterprise specializing in integrated compliance management solutions.",
+            "location": "Remote, Brazil",
+            "title": "Full Stack PHP Developer",
+            "date": "04/2023 - 12/2023",
+            "description": "Contributed to advancing a new platform iteration.",
+            "milestones": [
+                "Engineered and implemented customized system modifications for 8 key clients, resulting in a 7% increase in overall client satisfaction.",
+                "Developed Restful APIs for a unified notification system, encompassing SMS, email, and platform integration.",
+                "Led migration of legacy systems to a modern React interface, improving page load times by 15%.",
+                "Conducted proactive maintenance tasks, ensuring a 7% decrease in reported issues.",
+                "Collaborated with multidisciplinary teams, resulting in a 30% faster implementation of client-requested features.",
+                "Participated in a Hackathon, achieving a 50% completion milestone for innovative tools slated for implementation in the upcoming version."
+            ]
+        },
+        {
+            "company": "DomvsIt",
+            "company-description": "A global IT consulting & software solutions company.",
+            "location": "Remote, Brazil",
+            "title": "Full Stack PHP Developer",
+            "date": "07/2022 - 12/2022",
+            "description": "Contributed to moving a new version of the platform forward.",
+            "milestones": [
+                "Developed and maintained a web application for the Finnet fintech client, resulting in a 12% increase in user engagement.",
+                "Collaborated on upgrading the SMS delivery platform, achieving a 20% increase in SMS delivery success rates.",
+                "Successfully addressed a high-priority bug causing payment reminder delays, resulting in an 80% reduction in customer complaints.",
+                "Implemented policy change alerts using Vue.js, leading to a 45% increase in user awareness.",
+                "Integrated an API-driven customer service chatbot, resulting in a 20% reduction in customer support inquiries.",
+                "Strengthened server security with more stringent CORS rules, decreasing security-related incidents by 5%."
+            ]
+        },
+        {
+            "company": "Printi",
+            "company-description": "A Brazilian e-commerce company that offers printing services.",
+            "location": "Remote, Brazil",
+            "title": "Junior Full Stack PHP Developer",
+            "date": "03/2022 - 06/2022",
+            "description": "Contributed to enhancing system responsiveness and robustness.",
+            "milestones" : [
+                "Improved system stability and reliability, increasing unit test coverage by 17% within the first quarter.",
+                "Fostered a collaborative development environment, organizing global programming sessions for cross-team knowledge sharing.",
+                "Deployed and integrated a notification system for newly added designs, resulting in a 7% increase in customer satisfaction."
+            ]
+        },
+        {
+            "company": "Reportei",
+            "company-description": "A Brazilian startup that offers a social media reporting tool.",
+            "location": "Remote, Brazil",
+            "title": "Junior Full Stack PHP Developer",
+            "date": "01/2021 - 03/2022",
+            "description": "Played a key role in the development of new features and maintenance of the SaaS product.",
+            "milestones": [
+                "Conceptualized and implemented new features for the personalized marketing reports web application, resulting in a 7% increase in user engagement.",
+                "Crafted payment pages using Laravel, Blade, and Livewire, resulting in a 22% improvement in transaction success rates.",
+                "Spearheaded an exit intent project using Javascript, contributing to a 7% increase in client retention.",
+                "Addressed reactivity issues on dynamic report pages by employing Vue.js, resulting in an 8% reduction in page load times.",
+                "Optimized the report generation process, resulting in a 12% reduction in report generation time.",
+                "Collaborated with the team to implement performance improvements across the entire database."
+            ]
+        },
+        {
+            "company": "App Masters",
+            "company-description": "A Brazilian local startup that offers IT consulting & software solutions.",
+            "location": "Juiz de Fora, MG, Brazil",
+            "title": "Back-end PHP Intern",
+            "date": "08/2018 - 10/2018",
+            "description": "Played a key role in the initial development of a new product.",
+            "milestones": [
+                "Led the development of a comprehensive RESTful API for a website creation platform, utilizing Lumen and MySQL.",
+                "Pioneered the adoption of Test-Driven Development (TDD) principles using PHPUnit.",
+                "Orchestrated version control using Git, facilitating collaborative development and maintaining a well-organized code repository."
+            ]
+        },
+        {
+            "company": "Voitto Group",
+            "company-description": "A Brazilian local company that offers online courses and consulting services about Lean Six Sigma.",
+            "location": "Juiz de Fora, MG, Brazil",
+            "title": "Full Stack PHP Intern",
+            "date": "03/2018 - 07/2018",
+            "description": "Developed new features and provided maintenance for the course website.",
+            "milestones": [
+                "Proactively addressed and resolved customer-reported bugs on the Lean Six Sigma management courses video platform.",
+                "Collaborated with the research team to innovate and implement a gamification system tied to course completion time.",
+                "Leveraged the Codeigniter framework to construct and optimize the video platform for Lean Six Sigma management courses."
+            ]
+        }
+    ]
+}
