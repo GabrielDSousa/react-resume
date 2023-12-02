@@ -1,5 +1,5 @@
 {
-    "personal-info": {
+    "personalInfo": {
         "name": "Gabriel Ramos de Sousa",
         "email": "gabrielramos.email@gmail.com",
         "phone": "+55 32 9 9139-5135",
@@ -7,14 +7,14 @@
         "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
         "location": "Juiz de Fora, MG, Brasil"
     },
-    "professional-summary": {
+    "professionalSummary": {
         "title": "Desenvolvedor Full-Stack PHP",
         "summary": "Desenvolvedor Full-Stack PHP orientado a resultados com quase 4 anos de experiência na criação de aplicações e APIs eficientes. Histórico comprovado em ambientes de equipe colaborativos, entregando soluções centradas no usuário dentro do prazo e escopo."
     },
-    "work-experience": [
+    "workExperience": [
         {
             "company": "SoftExpert",
-            "company-description": "Líder de mercado de soluções integradas para gestão de conformidade.",
+            "companyDescription": "Líder de mercado de soluções integradas para gestão de conformidade.",
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Full Stack PHP",
             "date": "04/2023 - 12/2023",
@@ -30,7 +30,7 @@
         },
         {
             "company": "DomvsIt",
-            "company-description": "Empresa global de consultoria em TI e soluções de software.",
+            "companyDescription": "Empresa global de consultoria em TI e soluções de software.",
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Full Stack PHP",
             "date": "07/2022 - 12/2022",
@@ -46,7 +46,7 @@
         },
         {
             "company": "Printi",
-            "company-description": "Empresa brasileira de comércio eletrônico que oferece serviços de impressão.",
+            "companyDescription": "Empresa brasileira de comércio eletrônico que oferece serviços de impressão.",
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Júnior Full Stack PHP",
             "date": "03/2022 - 06/2022",
@@ -59,7 +59,7 @@
         },
         {
             "company": "Reportei",
-            "company-description": "Startup brasileira que oferece uma ferramenta de relatórios de mídia social.",
+            "companyDescription": "Startup brasileira que oferece uma ferramenta de relatórios de mídia social.",
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Júnior Full Stack PHP",
             "date": "01/2021 - 03/2022",
@@ -75,7 +75,7 @@
         },
         {
             "company": "App Masters",
-            "company-description": "Startup local brasileira que oferece consultoria em TI e soluções de software.",
+            "companyDescription": "Startup local brasileira que oferece consultoria em TI e soluções de software.",
             "location": "Juiz de Fora, MG, Brasil",
             "title": "Estagiário Back-end PHP",
             "date": "08/2018 - 10/2018",
@@ -88,7 +88,7 @@
         },
         {
             "company": "Grupo Voitto",
-            "company-description": "Empresa local brasileira que oferece cursos online e serviços de consultoria sobre Lean Six Sigma.",
+            "companyDescription": "Empresa local brasileira que oferece cursos online e serviços de consultoria sobre Lean Six Sigma.",
             "location": "Juiz de Fora, MG, Brasil",
             "title": "Estagiário Full Stack PHP",
             "date": "03/2018 - 07/2018",
