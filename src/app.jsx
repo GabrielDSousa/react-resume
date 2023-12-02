@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Router, Link } from "wouter";
+import { Router } from "wouter";
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
+import MenuFooter from "./components/footer.jsx";
 
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.jsx';
@@ -12,18 +13,20 @@ export default function Home() {
   return (
     <Router>
       <Seo />
-      <main>
-        <div>
-          <PageRouter />
-        </div>
-      </main>
-      <footer>
-        <div>
-          <Link href="/">Home</Link>
-          <span>|</span>
-          <Link href="/about">About</Link>
-        </div>
-      </footer>
+        <main className="flex flex-col">
+          <div className="flex-grow">
+            <PageRouter />
+          </div>
+          
+        </main>
     </Router>
+    
+    
+    <div className="flex flex-col min-h-screen bg-gray-800 text-white">
+      <div className="flex-grow">
+        <PageRouter />
+      </div>
+      <MenuFooter />
+    </div>
   );
 }
