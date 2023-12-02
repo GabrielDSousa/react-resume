@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div>
-      <h1>{resumeData.personalInfo}</h1>
+      <h1>{resumeData.personalInfo.name}</h1>
     </div>
   );
 };
