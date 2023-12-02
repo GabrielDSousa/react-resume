@@ -4,11 +4,10 @@ import { LanguageProvider } from './hooks/LanguageContext';
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
-import MenuFooter from "./components/footer.jsx";
+import MenuFooter from "./components/menuFooter.jsx";
 
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.jsx';
-
 
 // Home function that is reflected across the site
 export default function App() {

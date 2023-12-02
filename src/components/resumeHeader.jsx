@@ -1,8 +1,8 @@
 // ResumeHeader.js
 import React from 'react';
 
-const ResumeHeader = ({ lang, personalInfo }) => {
-  const { name, title, location, email, phone } = personalInfo[lang];
+const ResumeHeader = ({ personalInfo }) => {
+  const { name, title, location, email, phone } = personalInfo;
 
   return (
     <div style={{ pageBreakBefore: 'always' }}>
