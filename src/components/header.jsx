@@ -10,8 +10,8 @@ const Header = () => {
     const fetchResumeData = async () => {
       try {
         const response = await fetch(`./resume-${lang}.json`);
-        console.log(response.json());
         const data = await response.json();
+        console.log(data.personalInfo.name);
         setResumeData(data);
       } catch (error) {
         console.error('Error fetching resume data:', error);
@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div>
-      <h1>Hi</h1>
+      <h1>{resumeData.personalInfo}</h1>
     </div>
   );
 };
