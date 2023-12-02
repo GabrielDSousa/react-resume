@@ -34,14 +34,14 @@
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Full Stack PHP",
             "date": "07/2022 - 12/2022",
-            "description": "Contribuiu para o avanço de uma nova versão da plataforma.",
+            "description": "Contribui para o avanço de uma nova versão da plataforma.",
             "milestones": [
-                "Desenvolveu e manteve uma aplicação web para o cliente Finnet fintech, resultando em um aumento de 12% na participação do usuário.",
-                "Colaborou na atualização da plataforma de entrega de SMS, alcançando um aumento de 20% nas taxas de sucesso na entrega de SMS.",
-                "Resolveu com sucesso um bug de alta prioridade que causava atrasos em lembretes de pagamento, resultando em uma redução de 80% nas reclamações dos clientes.",
-                "Implementou alertas de mudança de política usando Vue.js, levando a um aumento de 45% na conscientização do usuário.",
-                "Integrou um chatbot de atendimento ao cliente impulsionado por API, resultando em uma redução de 20% nas consultas de suporte ao cliente.",
-                "Reforçou a segurança do servidor com regras CORS mais rigorosas, diminuindo os incidentes relacionados à segurança em 5%."
+                "Desenvolvi e mantive uma aplicação web para o cliente Finnet fintech, resultando em um aumento de 12% na participação do usuário.",
+                "Colaborei na atualização da plataforma de entrega de SMS, alcançando um aumento de 20% nas taxas de sucesso na entrega de SMS.",
+                "Resolvi com sucesso um bug de alta prioridade que causava atrasos em lembretes de pagamento, resultando em uma redução de 80% nas reclamações dos clientes.",
+                "Implementei alertas de mudança de política usando Vue.js, levando a um aumento de 45% na conscientização do usuário.",
+                "Integrei um chatbot de atendimento ao cliente impulsionado por API, resultando em uma redução de 20% nas consultas de suporte ao cliente.",
+                "Reforçei a segurança do servidor com regras CORS mais rigorosas, diminuindo os incidentes relacionados à segurança em 5%."
             ]
         },
         {
@@ -50,11 +50,11 @@
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Júnior Full Stack PHP",
             "date": "03/2022 - 06/2022",
-            "description": "Contribuiu para aprimorar a responsividade e robustez do sistema.",
-            "milestones" : [
-                "Aumentou a estabilidade e confiabilidade do sistema, aumentando a cobertura de testes unitários em 17% no primeiro trimestre.",
-                "Fomentou um ambiente de desenvolvimento colaborativo, organizando sessões globais de programação para compartilhamento de conhecimento entre equipes.",
-                "Implantou e integrou um sistema de notificação para novos designs, resultando em um aumento de 7% na satisfação do cliente."
+            "description": "Contribui para aprimorar a responsividade e robustez do sistema.",
+            "milestones": [
+                "Aumentei a estabilidade e confiabilidade do sistema, aumentando a cobertura de testes unitários em 17% no primeiro trimestre.",
+                "Fomentei um ambiente de desenvolvimento colaborativo, organizando sessões de programação para compartilhamento de conhecimento entre equipes.",
+                "Implantei e integrei um sistema de notificação para novos designs, resultando em um aumento de 7% na satisfação do cliente."
             ]
         },
         {
@@ -63,14 +63,14 @@
             "location": "Remoto, Brasil",
             "title": "Desenvolvedor Júnior Full Stack PHP",
             "date": "01/2021 - 03/2022",
-            "description": "Desempenhou um papel fundamental no desenvolvimento de novos recursos e manutenção do produto SaaS.",
+            "description": "Desempenhei um papel fundamental no desenvolvimento de novos recursos e manutenção do produto SaaS.",
             "milestones": [
-                "Concebeu e implementou novos recursos para a aplicação web de relatórios de marketing personalizados, resultando em um aumento de 7% na participação do usuário.",
-                "Criou páginas de pagamento usando Laravel, Blade e Livewire, resultando em um aumento de 22% nas taxas de sucesso das transações.",
-                "Liderou um projeto de intenção de saída usando Javascript, contribuindo para um aumento de 7% na retenção de clientes.",
-                "Abordou problemas de reatividade em páginas de relatórios dinâmicos usando Vue.js, resultando em uma redução de 8% nos tempos de carregamento da página.",
-                "Otimizou o processo de geração de relatórios, resultando em uma redução de 12% no tempo de geração de relatórios.",
-                "Colaborou com a equipe para implementar melhorias de desempenho em todo o banco de dados."
+                "Implementei novos recursos para a aplicação web de relatórios de marketing personalizados, resultando em um aumento de 7% na participação do usuário.",
+                "Criei páginas de pagamento usando Laravel, Blade e Livewire, resultando em um aumento de 22% nas taxas de sucesso das transações.",
+                "Liderei um projeto de intenção de saída usando Javascript, contribuindo para um aumento de 7% na retenção de clientes.",
+                "Abordei problemas de reatividade em páginas de relatórios dinâmicos usando Vue.js, resultando em uma redução de 8% nos tempos de carregamento da página.",
+                "Otimizei o processo de geração de relatórios, resultando em uma redução de 12% no tempo de geração de relatórios.",
+                "Colaborei com a equipe para implementar melhorias de desempenho em todo o banco de dados, diminuindo 15% dos tempos de consulta."
             ]
         },
         {
@@ -79,11 +79,11 @@
             "location": "Juiz de Fora, MG, Brasil",
             "title": "Estagiário Back-end PHP",
             "date": "08/2018 - 10/2018",
-            "description": "Desempenhou um papel chave no desenvolvimento inicial de um novo produto.",
+            "description": "Desempenhei um papel chave no desenvolvimento inicial de um novo produto.",
             "milestones": [
-                "Liderou o desenvolvimento de uma abrangente API RESTful para uma plataforma de criação de sites, utilizando Lumen e MySQL.",
-                "Pioneirou a adoção de princípios de Desenvolvimento Orientado a Testes (TDD) usando PHPUnit.",
-                "Orquestrou o controle de versão usando Git, facilitando o desenvolvimento colaborativo e mantendo um repositório de código bem organizado."
+                "Liderei o desenvolvimento de uma abrangente API RESTful para uma plataforma de criação de sites, utilizando Lumen e MySQL.",
+                "Implementei os princípios de Desenvolvimento Orientado a Testes (TDD) usando PHPUnit, no desenvolvimento de novos recursos.",
+                "Adotei o uso de controle de versão no projeto, usando Git, facilitando o desenvolvimento colaborativo e mantendo um repositório de código bem organizado."
             ]
         },
         {
@@ -92,12 +92,88 @@
             "location": "Juiz de Fora, MG, Brasil",
             "title": "Estagiário Full Stack PHP",
             "date": "03/2018 - 07/2018",
-            "description": "Desenvolveu novos recursos e realizou manutenção para o site do curso.",
+            "description": "Desenvolvi novos recursos e realizou manutenção para o site do curso.",
             "milestones": [
-                "Abordou proativamente e resolveu bugs relatados pelos clientes na plataforma de vídeos dos cursos de gestão Lean Six Sigma.",
-                "Colaborou com a equipe de pesquisa para inovar e implementar um sistema de gamificação vinculado ao tempo de conclusão do curso.",
-                "Utilizou o framework Codeigniter para construir e otimizar a plataforma de vídeo para cursos de gestão Lean Six Sigma."
+                "Abordei proativamente e resolvi bugs relatados pelos clientes na plataforma de vídeos dos cursos de gestão Lean Six Sigma.",
+                "Colaborei com a equipe de pesquisa para inovar e implementar um sistema de gamificação vinculado ao tempo de conclusão do curso.",
+                "Utilizei o framework Codeigniter para construir e otimizar a plataforma de vídeo para cursos de gestão Lean Six Sigma."
             ]
         }
-    ]
+    ],
+    "education": [
+        {
+            "institution": "Vianna Júnior",
+            "location": "Juiz de Fora, MG, Brasil",
+            "degree": "Tecnólogo em Sistemas para Internet",
+            "date": "2016 - 2018",
+            "description": "Disciplinas relevantes: Estruturas de Dados, Algoritmos, Programação Orientada a Objetos, Engenharia de Software, Sistemas de Gerenciamento de Bancos de Dados, Redes de Computadores, Sistemas Operacionais, Gerenciamento Ágil e Webapps."
+        }
+    ],
+    "certifications": [
+        {
+            "institution": "Udemy",
+            "location": "Online",
+            "title": "PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos",
+            "date": "2021",
+            "description": "Aprendi os fundamentos do PHP 7 e MySQL, incluindo sintaxe básica, POO e gerenciamento de bancos de dados."
+        }
+    ],
+    "skills": {
+        "languages": [
+            "PHP",
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "frameworks": [
+            "Laravel",
+            "Lumen",
+            "Codeigniter",
+            "Symfony",
+            "Vue.js",
+            "React",
+            "Bootstrap",
+            "Tailwind CSS"
+        ],
+        "databases": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "SQL Server"
+        ],
+        "tools": [
+            "Git",
+            "Docker",
+            "Linux",
+            "Apache",
+            "Nginx",
+            "PHPUnit",
+            "Composer",
+            "NPM"
+        ],
+        "languagesLevel": {
+            "portuguese": "Nativo",
+            "english": "B2 - Intermediário Superior"
+        },
+        "interests": [
+            "Arquitetura de Software",
+            "Padrões de Design de Software",
+            "Código Limpo",
+            "Desenvolvimento Orientado a Testes",
+            "Integração Contínua",
+            "Entrega Contínua",
+            "Implantação Contínua",
+            "Microsserviços",
+            "Arquitetura Orientada a Eventos",
+            "Arquitetura Serverless",
+            "Computação em Nuvem",
+            "Aprendizado de Máquina",
+            "Inteligência Artificial",
+            "Internet das Coisas"
+        ],
+        "achievements": [
+            "Participei do Hackathon SoftExpert de outubro de 2023, alcançando um marco de conclusão de 50% para ferramentas inovadoras programadas para implementação na próxima versão.",
+            "Participei do Hackathon Vianna de janeiro de 2018, alcançando um marco de conclusão de 75% para os problemas, tornando minha equipe a segunda colocada."
+        ]
+    }
 }

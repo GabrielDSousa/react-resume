@@ -4,6 +4,9 @@ import { useLanguage } from '../hooks/LanguageContext';
 import ResumeHeader from '../components/resumeHeader';
 import ProfessionalSummary from '../components/professionalSummary';
 import WorkExperience from '../components/workExperience';
+import Education from '../components/education';
+import Certifications from '../components/certifications';
+import Skills from '../components/skills';
 import English from '../resume-en.json'
 import Portuguese from '../resume-pt.json'
 
@@ -18,6 +21,9 @@ const Home = () => {
         <ResumeHeader personalInfo={translated.personalInfo} />
         <ProfessionalSummary professionalSummary={translated.professionalSummary} />
         <WorkExperience experience={translated.workExperience} />
+        <Education education={translated.education} />
+        <Certifications certifications={translated.certifications} />
+        <Skills skills={translated.skills} />
       </section>
   );
 };

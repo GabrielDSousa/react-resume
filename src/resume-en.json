@@ -8,7 +8,7 @@
         "location": "Juiz de Fora, MG, Brazil"
     },
     "professionalSummary": {
-        "title": "PHP Full-Stack Developer",
+        "title": "Full-Stack PHP Developer",
         "summary": "Results-driven PHP Full-Stack Developer with almost 4 years of expertise in crafting efficient applications and APIs. Proven track record in collaborative team environments, delivering user-focused solutions on time and within scope."
     },
     "workExperience": [
@@ -65,32 +65,32 @@
             "date": "01/2021 - 03/2022",
             "description": "Played a key role in the development of new features and maintenance of the SaaS product.",
             "milestones": [
-                "Conceptualized and implemented new features for the personalized marketing reports web application, resulting in a 7% increase in user engagement.",
+                "Implemented new features for the personalized marketing reports web application, resulting in a 7% increase in user engagement.",
                 "Crafted payment pages using Laravel, Blade, and Livewire, resulting in a 22% improvement in transaction success rates.",
                 "Spearheaded an exit intent project using Javascript, contributing to a 7% increase in client retention.",
                 "Addressed reactivity issues on dynamic report pages by employing Vue.js, resulting in an 8% reduction in page load times.",
                 "Optimized the report generation process, resulting in a 12% reduction in report generation time.",
-                "Collaborated with the team to implement performance improvements across the entire database."
+                "Collaborated with the team to implement performance improvements across the entire database. This resulted in a 15% reduction in database query times."
             ]
         },
         {
             "company": "App Masters",
             "companyDescription": "A Brazilian local startup that offers IT consulting & software solutions.",
             "location": "Juiz de Fora, MG, Brazil",
-            "title": "Back-end PHP Intern",
+            "title": "Back-end PHP internship",
             "date": "08/2018 - 10/2018",
             "description": "Played a key role in the initial development of a new product.",
             "milestones": [
                 "Led the development of a comprehensive RESTful API for a website creation platform, utilizing Lumen and MySQL.",
-                "Pioneered the adoption of Test-Driven Development (TDD) principles using PHPUnit.",
-                "Orchestrated version control using Git, facilitating collaborative development and maintaining a well-organized code repository."
+                "Implemented the adoption of Test-Driven Development (TDD) principles using PHPUnit, at new features development.",
+                "Adopted the version control in project, using Git, facilitating collaborative development and maintaining a well-organized code repository."
             ]
         },
         {
             "company": "Voitto Group",
             "companyDescription": "A Brazilian local company that offers online courses and consulting services about Lean Six Sigma.",
             "location": "Juiz de Fora, MG, Brazil",
-            "title": "Full Stack PHP Intern",
+            "title": "Full Stack PHP internship",
             "date": "03/2018 - 07/2018",
             "description": "Developed new features and provided maintenance for the course website.",
             "milestones": [
@@ -99,5 +99,81 @@
                 "Leveraged the Codeigniter framework to construct and optimize the video platform for Lean Six Sigma management courses."
             ]
         }
-    ]
+    ],
+    "education": [
+        {
+            "institution": "Vianna Júnior",
+            "location": "Juiz de Fora, MG, Brazil",
+            "degree": "Technologist in Systems for Internet",
+            "date": "2016 - 2018",
+            "description": "Relevant coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Database Management Systems, Computer Networks, Operating Systems, Agile management and Webapps."
+        }
+    ],
+    "certifications": [
+        {
+            "institution": "Udemy",
+            "location": "Online",
+            "title": "PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos",
+            "date": "2021",
+            "description": "Learned the fundamentals of PHP 7 and MySQL, including basic syntax, OOP, and database management."
+        }
+    ],
+    "skills": {
+        "languages": [
+            "PHP",
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "frameworks": [
+            "Laravel",
+            "Lumen",
+            "Codeigniter",
+            "Symfony",
+            "Vue.js",
+            "React",
+            "Bootstrap",
+            "Tailwind CSS"
+        ],
+        "databases": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "SQL Server"
+        ],
+        "tools": [
+            "Git",
+            "Docker",
+            "Linux",
+            "Apache",
+            "Nginx",
+            "PHPUnit",
+            "Composer",
+            "NPM"
+        ],
+        "languagesLevel": {
+            "portuguese": "Native",
+            "english": "B2 - Upper Intermediate"
+        },
+        "interests": [
+            "Software Architecture",
+            "Software Design Patterns",
+            "Clean Code",
+            "Test-Driven Development",
+            "Continuous Integration",
+            "Continuous Delivery",
+            "Continuous Deployment",
+            "Microservices",
+            "Event-Driven Architecture",
+            "Serverless Architecture",
+            "Cloud Computing",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Internet of Things"
+        ], 
+        "achievements": [
+            "Participated in the October 2023 SoftExpert Hackathon, achieving a 50% completion milestone for innovative tools slated for implementation in the upcoming version.",
+            "Participated in the January 2018 Vianna Hackathon, achieving a 75% completion milestone for the problems making my team the second place."
+        ]
+    }
 }
