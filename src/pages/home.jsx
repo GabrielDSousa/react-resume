@@ -12,12 +12,14 @@ const Home = () => {
   const translated = lang === 'pt' ? Portuguese : English;
 
   return (
-      <div <div className="max-w-[210mm] mx-auto p-4">
-  {/* Your content goes here */}
-</div>>
+      <section name="a4-resume" className="max-w-[210mm] mx-auto p-4 border border-solid border-gray-500 rounded">
         <ResumeHeader lang={lang} personalInfo={translated.personalInfo} />
-        {/* Content for the rest of the resume... */}
-      </>
+      <ProfessionalSummary lang={lang} summary={professionalSummary} />
+      <WorkExperience lang={lang} experience={workExperience} />
+      <Education lang={lang} education={education} />
+      <Certifications lang={lang} certifications={certifications} />
+      <Skills lang={lang} skills={skills} />
+      </section>
   );
 };
 

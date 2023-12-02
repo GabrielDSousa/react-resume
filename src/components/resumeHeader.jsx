@@ -5,18 +5,12 @@ const ResumeHeader = ({ personalInfo }) => {
   const { name, title, location, email, phone } = personalInfo;
 
   return (
-    <div style={{ pageBreakBefore: 'always' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <div>
-          <h1>{name}</h1>
-          <p>{title}</p>
-        </div>
-        <div>
-          <p>{location}</p>
-          <p>Email: {email}</p>
-          <p>Phone: {phone}</p>
-        </div>
-      </div>
+    <div className="mb-8">
+      <div className="text-3xl font-bold">{name}</div>
+      <div className="text-lg">{title}</div>
+      <div className="text-lg">{location}</div>
+      <div className="text-lg">{email}</div>
+      <div className="text-lg">{phone}</div>
     </div>
   );
 };
