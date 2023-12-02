@@ -6,7 +6,7 @@ const MenuFooter = () => {
     <div className="bg-gray-800 text-white p-4">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-bold">Your App Name</h1>
+          <h1 className="text-2xl font-bold">GabrielDSousa</h1>
           <p className="text-sm">© 2023 All rights reserved.</p>
         </div>
         <div>
