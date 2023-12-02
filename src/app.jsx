@@ -4,7 +4,6 @@ import { Router } from "wouter";
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
 import MenuFooter from "./components/footer.jsx";
-import LanguageComponent from "./components/language.jsx";
 
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.jsx';
@@ -18,7 +17,6 @@ export default function Home() {
         <div className="flex flex-col min-h-screen bg-gray-800 text-white">
           <div className="flex-grow">
             <PageRouter />
-            <LanguageComponent />
           </div>
           <MenuFooter />
         </div>
