@@ -1,6 +1,6 @@
 // Header.js
 import React, { useEffect, useState } from 'react';
-import { useLanguage } from '../hooks/LanguageContext';
+import { useLanguage } from '../hooks/LanguageContext.jsx';
 
 const Header = () => {
   const { lang } = useLanguage();
@@ -9,7 +9,8 @@ const Header = () => {
   useEffect(() => {
     const fetchResumeData = async () => {
       try {
-        const response = await fetch(`../resume-${lang}.json`);
+        const response = await fetch(`./resume-${lang}.json`);
+        console.log(response.json());
         const data = await response.json();
         setResumeData(data);
       } catch (error) {
@@ -22,8 +23,7 @@ const Header = () => {
 
   return (
     <div>
-      <h1>{resumeData.personalInfo.name}</h1>
-      <p>{resumeData.personalInfo.title}</p>
+      <h1>Hi</h1>
     </div>
   );
 };
