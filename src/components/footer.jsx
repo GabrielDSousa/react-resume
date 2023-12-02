@@ -11,8 +11,8 @@ const MenuFooter = () => {
         </div>
         <div>
           <ul className="flex space-x-4">
-            <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
-            <li><Link href="/about" className="hover:text-gray-300">About</Link></li>
+            <li><Link href="/" className="hover:text-gray-300">Portuguese</Link></li>
+            <li><Link href="/en" className="hover:text-gray-300">English</Link></li>
           </ul>
         </div>
       </div>
