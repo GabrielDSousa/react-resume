@@ -10,12 +10,12 @@ const ResumeHeader = ({ personalInfo }) => {
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
         alt="Profile"
-        className="rounded-full object-cover h-32 w-32 mr-4 shadow-md shadow-lime-500 drop-shadow-2xl"
+        className="rounded-full object-cover h-32 w-32 mr-4 shadow-md shadow-lime-500 drop-shadow-2xl mr-4"
       />
 
       {/* Text Block */}
       <div>
-        <div className="text-3xl font-bold">{name}</div>
+        <div className="text-3xl font-bold pb-4">{name}</div>
         <div className="text-lg">{title}</div>
         <div className="text-lg flex items-center">
           <i className="fa fa-map-marker pr-3"></i>
