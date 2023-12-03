@@ -1,13 +1,16 @@
 import React from 'react';
+import { useLanguage } from '../hooks/LanguageContext';
 
 const WorkExperience = ({ experience }) => {
+  const { lang } = useLanguage();
+  
   return (
     <div className="mb-8">
-      <div className="text-2xl font-bold mb-4">Work Experience</div>
+      <div className="text-2xl font-bold mb-4">{ lang === "pt" ? "Experiência profissional" : "Work Experience"}</div>
       {experience.map((job, index) => (
         <div key={index} className="mb-6">
           <div className="text-lg font-bold mb-2">{job.title}</div>
-          <div className="text-gray-600">{job.company} - {job.location} | {job.date}</div>
+          <div className="text-gray-300">{job.company} - {job.location} | {job.date}</div>
           <p className="mb-2">{job.description}</p>
           {job.milestones && (
             <ul className="list-disc pl-6">
