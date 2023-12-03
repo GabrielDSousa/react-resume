@@ -32,7 +32,7 @@ export default function App() {
     <Router>
       <Seo />
       <Menu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <div className="flex flex-col min-h-screen bg-neutral-50 text-neutral-950 print:text-sm font-sans print:tracking-tigh print:leading-tight">
+        <div className="flex flex-col min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-50 print:text-sm font-sans print:tracking-tigh print:leading-tight">
           <div className="flex-grow">
              <LanguageProvider>
                 <div>

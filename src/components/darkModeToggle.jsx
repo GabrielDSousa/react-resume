@@ -9,11 +9,11 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       }`}
       onClick={toggleDarkMode}
     >
-      <div>
+      <div className="w-8 h-8 flex items-center justify-center">
         {isDarkMode ? (
-          <i class="fa-solid fa-moon p-3 text-white"></i>
+          <i class="fa fa-map-marker text-white"></i>
         ) : (
-          <i class="fa-solid fa-sun p-3 text-yellow-300"></i>
+          <i class="fa fa-map-marker text-yellow-300"></i>
         )}
       </div>
     </button>
