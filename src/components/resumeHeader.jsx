@@ -14,7 +14,7 @@ const ResumeHeader = ({ personalInfo }) => {
       />
 
       {/* Text Block */}
-      <div>
+      <div className="print:ml-4">
         <div className="text-3xl print:text-base font-bold pb-4 print:pb-2">{name}</div>
         <div className="text-lg print:text-sm">{title}</div>
         <div className="text-lg print:text-sm flex items-center">
@@ -32,7 +32,7 @@ const ResumeHeader = ({ personalInfo }) => {
       </div>
 
       {/* Social Links Grid */}
-      <div className="flex flex-col">
+      <div className="flex flex-col print:ml-4">
         <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-linkedin pr-2 print:pr-1"></i>
           <span className="inline print:hidden">
