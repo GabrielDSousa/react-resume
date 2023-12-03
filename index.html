@@ -18,8 +18,13 @@
         margin: 8mm 4mm; /* Default margin for all pages */
       }
     </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
   </head>
-  <body>
+  <body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-50 print:text-sm font-sans print:tracking-tigh print:leading-tight">
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
   </body>
