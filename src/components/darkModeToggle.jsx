@@ -11,9 +11,9 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
     >
       <div className="w-8 h-8 flex items-center justify-center">
         {isDarkMode ? (
-          <i class="fa fa-map-marker text-white"></i>
+          <i className="fa-solid fa-moon text-white"></i>
         ) : (
-          <i class="fa fa-map-marker text-yellow-300"></i>
+          <i className="fa-solid fa-sun text-yellow-300"></i>
         )}
       </div>
     </button>
