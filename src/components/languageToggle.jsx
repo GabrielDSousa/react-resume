@@ -1,14 +1,36 @@
-// Education.js
 import React from 'react';
 import { useLanguage } from '../hooks/LanguageContext';
 
 const LanguageToggle = () => {
-  const { lang } = useLanguage();
-  
+  const { lang, setLang } = useLanguage();
+
+  const toggleLanguage = () => {
+    const newLang = lang === 'en' ? 'pt' : 'en';
+
+    // Update language state
+    setLang(newLang);
+
+    // Get the current URL and search parameters
+    const currentUrl = window.location.pathname + window.location.search;
+    const searchParams = new URLSearchParams(window.location.search);
+
+    // Remove any existing lang parameter
+    searchParams.delete('lang');
+
+    // Add the new lang parameter
+    searchParams.set('lang', newLang);
+
+    // Create the new URL
+    const newUrl = currentUrl + (searchParams.toString() ? `?${searchParams.toString()}` : '');
+
+    // Update URL without a reload
+    window.history.pushState({ path: newUrl }, '', newUrl);
+  };
+
   return (
-    <div className="mb-8 print:mb-4 p-4">
-      <div className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">{lang === "pt" ? "Educação" : "Education"}</div>
-    </div>
+    <button onClick={toggleLanguage}>
+      {lang === 'en' ? 'Switch to Portuguese' : 'Trocar para Inglês'}
+    </button>
   );
 };
 

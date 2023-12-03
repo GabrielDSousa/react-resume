@@ -45,16 +45,16 @@ export default function App() {
   return (
     <Router>
       <Seo />
-      <Menu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <div className="flex flex-col min-h-screen">
-        <div className="flex-grow">
-          <LanguageProvider>
+      <LanguageProvider>
+        <Menu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-grow">
             <div>
               <PageRouter />
             </div>
-          </LanguageProvider>
+          </div>
         </div>
-      </div>
+      </LanguageProvider>
     </Router>
   );
 }
