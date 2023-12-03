@@ -1,5 +1,5 @@
 // ResumeHeader.js
-import React from 'react';
+import React from "react";
 
 const ResumeHeader = ({ personalInfo }) => {
   const { name, title, location, email, phone } = personalInfo;
@@ -7,14 +7,11 @@ const ResumeHeader = ({ personalInfo }) => {
   return (
     <div className="mb-8 flex items-center">
       {/* Profile Picture with Shadow */}
-      <div className="relative">
-        <img
-          src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275"  // Update the path to your image
-          alt="Profile"
-          className="rounded-full object-cover h-32 w-32 mr-4 shadow-md"
-        />
-        <div className="absolute -bottom-1 -right-1 h-32 w-32 bg-lime-500 rounded-full bg-opacity-50"></div>
-      </div>
+      <img
+        src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
+        alt="Profile"
+        className="rounded-full object-cover h-32 w-32 mr-4 shadow-md shadow-lime-500 drop-shadow-2xl"
+      />
 
       {/* Text Block */}
       <div>
