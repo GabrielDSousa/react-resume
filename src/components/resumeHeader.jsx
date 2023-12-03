@@ -17,9 +17,9 @@ const ResumeHeader = ({ personalInfo }) => {
       <div>
         <div className="text-3xl font-bold">{name}</div>
         <div className="text-lg">{title}</div>
-        <div className="text-lg">{location}</div>
-        <div className="text-lg">{email}</div>
-        <div className="text-lg">{phone}</div>
+        <div className="text-lg"><i className="fa fa-map-marker pl-1 pr-3"></i>{location}</div>
+        <div className="text-lg"><i className="fa fa-envelope pr-2"></i>{email}</div>
+        <div className="text-lg"><i className="fa fa-phone pr-2"></i>{phone}</div>
       </div>
     </div>
   );
