@@ -8,10 +8,10 @@ const Skills = ({ skills }) => {
 
   return (
     <div className="mb-8">
-      <div className="text-2xl font-bold mb-4">{ lang === "pt" ? "Conhecimentos" : "Skills"}</div>
+      <div className="text-2xl print:text-base text-lime-950 font-bold mb-4">{ lang === "pt" ? "Conhecimentos" : "Skills"}</div>
       
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Languages</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Linguagens de programação" : "Program Languages"}</div>
         <ul className="list-disc pl-6">
           {languages.map((lang, index) => (
             <li key={index}>{lang}</li>
@@ -20,7 +20,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Frameworks</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">Frameworks</div>
         <ul className="list-disc pl-6">
           {frameworks.map((framework, index) => (
             <li key={index}>{framework}</li>
@@ -29,7 +29,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Databases</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Banco de dados" : "Databases"}</div>
         <ul className="list-disc pl-6">
           {databases.map((db, index) => (
             <li key={index}>{db}</li>
@@ -38,7 +38,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Tools</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Ferramentas" : "Tools"}</div>
         <ul className="list-disc pl-6">
           {tools.map((tool, index) => (
             <li key={index}>{tool}</li>
@@ -47,7 +47,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Languages Level</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Proficiência" : "Language proficiency"}</div>
         <ul className="list-disc pl-6">
           {Object.entries(languagesLevel).map(([lang, level], index) => (
             <li key={index}>{`${lang}: ${level}`}</li>
@@ -56,7 +56,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div className="mb-6">
-        <div className="text-lg font-bold mb-2">Interests</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Conhecimentos" : "Skills"}Interests</div>
         <ul className="list-disc pl-6">
           {interests.map((interest, index) => (
             <li key={index}>{interest}</li>
@@ -65,7 +65,7 @@ const Skills = ({ skills }) => {
       </div>
 
       <div>
-        <div className="text-lg font-bold mb-2">Achievements</div>
+        <div className="text-lg print:text-sm text-lime-800 font-bold mb-2">{ lang === "pt" ? "Conhecimentos" : "Skills"}Achievements</div>
         <ul className="list-disc pl-6">
           {achievements.map((achievement, index) => (
             <li key={index}>{achievement}</li>

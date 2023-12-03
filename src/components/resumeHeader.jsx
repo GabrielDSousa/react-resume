@@ -15,17 +15,17 @@ const ResumeHeader = ({ personalInfo }) => {
 
       {/* Text Block */}
       <div>
-        <div className="text-3xl font-bold pb-4">{name}</div>
-        <div className="text-lg">{title}</div>
-        <div className="text-lg flex items-center">
+        <div className="text-3xl print:text-base font-bold pb-4">{name}</div>
+        <div className="text-lg print:text-sm">{title}</div>
+        <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-map-marker pr-3"></i>
           {location}
         </div>
-        <div className="text-lg flex items-center">
+        <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-envelope pr-2"></i>
           {email}
         </div>
-        <div className="text-lg flex items-center">
+        <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-phone pr-2"></i>
           {phone}
         </div>
@@ -33,14 +33,14 @@ const ResumeHeader = ({ personalInfo }) => {
 
       {/* Social Links Grid */}
       <div className="flex flex-col">
-        <div className="text-lg flex items-center">
+        <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-linkedin pr-2"></i>
           <span className="inline print:hidden">
             <a href="https://www.linkedin.com/in/GabrielDSousa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </span>
           <span className="hidden print:inline">linkedin.com/in/GabrielDSousa</span>
         </div>
-        <div className="text-lg flex items-center">
+        <div className="text-lg print:text-sm flex items-center">
           <i className="fa fa-github pr-2"></i>
           <span className="inline print:hidden">
             <a href="https://github.com/GabrielDSousa" target="_blank" rel="noopener noreferrer">GitHub</a>
