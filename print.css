@@ -1,7 +1,16 @@
 @media print {
-  body {
-    background-color: white;
-    color: black;
+  /* Hide automatic marks */
+  .page-break {
+    page-break-before: auto;
   }
 
+  .print-timestamp {
+    display: none;
+  }
+
+  .print-url {
+    display: none;
+  }
+
+  /* Add any additional styles for printing if needed */
 }
