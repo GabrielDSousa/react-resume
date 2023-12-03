@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section
       name="a4-resume"
-      className="max-w-[210mm] mx-auto p-4 border border-solid border-gray-500 rounded"
+      className="max-w-[210mm] mx-auto p-4 border border-solid border-gray-500 rounded print:border-none"
     >
       <ResumeHeader personalInfo={translated.personalInfo} />
       <ProfessionalSummary
