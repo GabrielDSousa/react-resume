@@ -28,11 +28,12 @@ const Home = () => {
         <div className="col-span-2">
           <WorkExperience experience={translated.workExperience} />
         </div>
-        <div>
+        <div className="h-full bg-lime-950">
           <Education education={translated.education} />
           <Skills skills={translated.skills} />
         </div>
       </div>
+      
       <Certifications certifications={translated.certifications} />
     </section>
   );

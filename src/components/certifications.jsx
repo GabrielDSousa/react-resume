@@ -10,7 +10,7 @@ const Certifications = ({ certifications }) => {
         {lang === "pt" ? "Certificados" : "Certifications"}
       </div>
       {certifications.map((cert, index) => (
-        <div key={index} className={`mb-6 print:mb-3 ${index >= 6 && 'print:hidden'}`}>
+        <div key={index} className={`mb-6 print:mb-3 ${index >= 5 && 'print:hidden'}`}>
           <div className="text-lg print:text-sm font-bold mb-2 print:mb-1">{cert.title}</div>
           <div className="text-lime-800">
             {cert.issuer} | {cert.issue_date}
