@@ -16,7 +16,15 @@ export const LanguageProvider = ({ children }) => {
     } else {
       setLang('en');
     }
-  }, []);
+
+    // Check if there is a language query parameter in the URL
+    const searchParams = new URLSearchParams(window.location.search);
+    const urlLang = searchParams.get('lang');
+
+    if (urlLang && (urlLang === 'en' || urlLang === 'pt')) {
+      setLang(urlLang);
+    }
+  }, [location.search]);
 
   const value = {
     lang,
