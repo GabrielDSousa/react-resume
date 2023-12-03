@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "wouter";
 
-const MenuFooter = () => {
+const Menu = () => {
   return (   
-    <div className="bg-gray-800 text-white p-4 print:hidden">
+    <div className="bg-gray-800 text-white p-4 mb-4 print:hidden">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold">GabrielDSousa</h1>
@@ -20,4 +20,4 @@ const MenuFooter = () => {
   );
 };
 
-export default MenuFooter;
+export default Menu;
