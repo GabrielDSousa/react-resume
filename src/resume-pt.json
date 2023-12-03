@@ -1,179 +1,325 @@
 {
-    "personalInfo": {
-        "name": "Gabriel Ramos de Sousa",
-        "email": "gabrielramos.email@gmail.com",
-        "phone": "+55 32 9 9139-5135",
-        "github": "https://github.com/GabrielDSousa",
-        "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
-        "location": "Juiz de Fora, MG, Brasil"
+  "personalInfo": {
+    "name": "Gabriel Ramos de Sousa",
+    "email": "gabrielramos.email@gmail.com",
+    "phone": "+55 32 9 9139-5135",
+    "github": "https://github.com/GabrielDSousa",
+    "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
+    "location": "Juiz de Fora, MG, Brasil"
+  },
+  "professionalSummary": {
+    "title": "Desenvolvedor Full-Stack PHP",
+    "summary": "Desenvolvedor Full-Stack PHP orientado a resultados com quase 4 anos de experiência na criação de aplicações e APIs eficientes. Histórico comprovado em ambientes de equipe colaborativos, entregando soluções centradas no usuário dentro do prazo e escopo."
+  },
+  "workExperience": [
+    {
+      "company": "SoftExpert",
+      "companyDescription": "Líder de mercado de soluções integradas para gestão de conformidade.",
+      "location": "Remoto, Brasil",
+      "title": "Desenvolvedor Full Stack PHP",
+      "date": "04/2023 - 12/2023",
+      "description": "Contribui para o avanço de uma nova iteração da plataforma.",
+      "milestones": [
+        "Projetei e implementei modificações personalizadas no sistema para 8 clientes-chave, resultando em um aumento de 7% na satisfação geral do cliente.",
+        "Desenvolvi APIs Restful para um sistema unificado de notificação, abrangendo SMS, e-mail e integração à plataforma.",
+        "Liderei a migração de sistemas legados para uma interface moderna em React, melhorando os tempos de carregamento da página em 15%.",
+        "Realizei tarefas proativas de manutenção, garantindo uma redução de 7% nos problemas relatados.",
+        "Colaborei com equipes multidisciplinares, resultando em uma implementação 30% mais rápida de funcionalidades solicitadas pelo cliente.",
+        "Participei de uma Hackathon presencial, alcançando um marco de conclusão de 50% do desenvolvimento de ferramentas inovadoras programadas para implementação na próxima versão."
+      ]
     },
-    "professionalSummary": {
-        "title": "Desenvolvedor Full-Stack PHP",
-        "summary": "Desenvolvedor Full-Stack PHP orientado a resultados com quase 4 anos de experiência na criação de aplicações e APIs eficientes. Histórico comprovado em ambientes de equipe colaborativos, entregando soluções centradas no usuário dentro do prazo e escopo."
+    {
+      "company": "DomvsIt",
+      "companyDescription": "Empresa global de consultoria em TI e soluções de software.",
+      "location": "Remoto, Brasil",
+      "title": "Desenvolvedor Full Stack PHP",
+      "date": "07/2022 - 12/2022",
+      "description": "Contribui para o avanço de uma nova versão da plataforma.",
+      "milestones": [
+        "Desenvolvi e mantive uma aplicação web para o cliente Finnet fintech, resultando em um aumento de 12% na participação do usuário.",
+        "Colaborei na atualização da plataforma de entrega de SMS, alcançando um aumento de 20% nas taxas de sucesso na entrega de SMS.",
+        "Resolvi com sucesso um bug de alta prioridade que causava atrasos em lembretes de pagamento, resultando em uma redução de 80% nas reclamações dos clientes.",
+        "Implementei alertas de mudança de política usando Vue.js, levando a um aumento de 45% na conscientização do usuário.",
+        "Integrei um chatbot de atendimento ao cliente impulsionado por API, resultando em uma redução de 20% nas consultas de suporte ao cliente.",
+        "Reforçei a segurança do servidor com regras CORS mais rigorosas, diminuindo os incidentes relacionados à segurança em 5%."
+      ]
     },
-    "workExperience": [
-        {
-            "company": "SoftExpert",
-            "companyDescription": "Líder de mercado de soluções integradas para gestão de conformidade.",
-            "location": "Remoto, Brasil",
-            "title": "Desenvolvedor Full Stack PHP",
-            "date": "04/2023 - 12/2023",
-            "description": "Contribui para o avanço de uma nova iteração da plataforma.",
-            "milestones": [
-                "Projetei e implementei modificações personalizadas no sistema para 8 clientes-chave, resultando em um aumento de 7% na satisfação geral do cliente.",
-                "Desenvolvi APIs Restful para um sistema unificado de notificação, abrangendo SMS, e-mail e integração à plataforma.",
-                "Liderei a migração de sistemas legados para uma interface moderna em React, melhorando os tempos de carregamento da página em 15%.",
-                "Realizei tarefas proativas de manutenção, garantindo uma redução de 7% nos problemas relatados.",
-                "Colaborei com equipes multidisciplinares, resultando em uma implementação 30% mais rápida de funcionalidades solicitadas pelo cliente.",
-                "Participei de uma Hackathon presencial, alcançando um marco de conclusão de 50% do desenvolvimento de ferramentas inovadoras programadas para implementação na próxima versão."
-            ]
-        },
-        {
-            "company": "DomvsIt",
-            "companyDescription": "Empresa global de consultoria em TI e soluções de software.",
-            "location": "Remoto, Brasil",
-            "title": "Desenvolvedor Full Stack PHP",
-            "date": "07/2022 - 12/2022",
-            "description": "Contribui para o avanço de uma nova versão da plataforma.",
-            "milestones": [
-                "Desenvolvi e mantive uma aplicação web para o cliente Finnet fintech, resultando em um aumento de 12% na participação do usuário.",
-                "Colaborei na atualização da plataforma de entrega de SMS, alcançando um aumento de 20% nas taxas de sucesso na entrega de SMS.",
-                "Resolvi com sucesso um bug de alta prioridade que causava atrasos em lembretes de pagamento, resultando em uma redução de 80% nas reclamações dos clientes.",
-                "Implementei alertas de mudança de política usando Vue.js, levando a um aumento de 45% na conscientização do usuário.",
-                "Integrei um chatbot de atendimento ao cliente impulsionado por API, resultando em uma redução de 20% nas consultas de suporte ao cliente.",
-                "Reforçei a segurança do servidor com regras CORS mais rigorosas, diminuindo os incidentes relacionados à segurança em 5%."
-            ]
-        },
-        {
-            "company": "Printi",
-            "companyDescription": "Empresa brasileira de comércio eletrônico que oferece serviços de impressão.",
-            "location": "Remoto, Brasil",
-            "title": "Desenvolvedor Júnior Full Stack PHP",
-            "date": "03/2022 - 06/2022",
-            "description": "Contribui para aprimorar a responsividade e robustez do sistema.",
-            "milestones": [
-                "Aumentei a estabilidade e confiabilidade do sistema, aumentando a cobertura de testes unitários em 17% no primeiro trimestre.",
-                "Fomentei um ambiente de desenvolvimento colaborativo, organizando sessões de programação para compartilhamento de conhecimento entre equipes.",
-                "Implantei e integrei um sistema de notificação para novos designs, resultando em um aumento de 7% na satisfação do cliente."
-            ]
-        },
-        {
-            "company": "Reportei",
-            "companyDescription": "Startup brasileira que oferece uma ferramenta de relatórios de mídia social.",
-            "location": "Remoto, Brasil",
-            "title": "Desenvolvedor Júnior Full Stack PHP",
-            "date": "01/2021 - 03/2022",
-            "description": "Desempenhei um papel fundamental no desenvolvimento de novos recursos e manutenção do produto SaaS.",
-            "milestones": [
-                "Implementei novos recursos para a aplicação web de relatórios de marketing personalizados, resultando em um aumento de 7% na participação do usuário.",
-                "Criei páginas de pagamento usando Laravel, Blade e Livewire, resultando em um aumento de 22% nas taxas de sucesso das transações.",
-                "Liderei um projeto de intenção de saída usando Javascript, contribuindo para um aumento de 7% na retenção de clientes.",
-                "Abordei problemas de reatividade em páginas de relatórios dinâmicos usando Vue.js, resultando em uma redução de 8% nos tempos de carregamento da página.",
-                "Otimizei o processo de geração de relatórios, resultando em uma redução de 12% no tempo de geração de relatórios.",
-                "Colaborei com a equipe para implementar melhorias de desempenho em todo o banco de dados, diminuindo 15% dos tempos de consulta."
-            ]
-        },
-        {
-            "company": "App Masters",
-            "companyDescription": "Startup local brasileira que oferece consultoria em TI e soluções de software.",
-            "location": "Juiz de Fora, MG, Brasil",
-            "title": "Estagiário Back-end PHP",
-            "date": "08/2018 - 10/2018",
-            "description": "Desempenhei um papel chave no desenvolvimento inicial de um novo produto.",
-            "milestones": [
-                "Liderei o desenvolvimento de uma abrangente API RESTful para uma plataforma de criação de sites, utilizando Lumen e MySQL.",
-                "Implementei os princípios de Desenvolvimento Orientado a Testes (TDD) usando PHPUnit, no desenvolvimento de novos recursos.",
-                "Adotei o uso de controle de versão no projeto, usando Git, facilitando o desenvolvimento colaborativo e mantendo um repositório de código bem organizado."
-            ]
-        },
-        {
-            "company": "Grupo Voitto",
-            "companyDescription": "Empresa local brasileira que oferece cursos online e serviços de consultoria sobre Lean Six Sigma.",
-            "location": "Juiz de Fora, MG, Brasil",
-            "title": "Estagiário Full Stack PHP",
-            "date": "03/2018 - 07/2018",
-            "description": "Desenvolvi novos recursos e realizou manutenção para o site do curso.",
-            "milestones": [
-                "Abordei proativamente e resolvi bugs relatados pelos clientes na plataforma de vídeos dos cursos de gestão Lean Six Sigma.",
-                "Colaborei com a equipe de pesquisa para inovar e implementar um sistema de gamificação vinculado ao tempo de conclusão do curso.",
-                "Utilizei o framework Codeigniter para construir e otimizar a plataforma de vídeo para cursos de gestão Lean Six Sigma."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Vianna Júnior",
-            "location": "Juiz de Fora, MG, Brasil",
-            "degree": "Tecnólogo em Sistemas para Internet",
-            "date": "2016 - 2018",
-            "description": "Disciplinas relevantes: Estruturas de Dados, Algoritmos, Programação Orientada a Objetos, Engenharia de Software, Sistemas de Gerenciamento de Bancos de Dados, Redes de Computadores, Sistemas Operacionais, Gerenciamento Ágil e Webapps."
-        }
-    ],
-    "certifications": [
-        {
-            "institution": "Udemy",
-            "location": "Online",
-            "title": "PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos",
-            "date": "2021",
-            "description": "Aprendi os fundamentos do PHP 7 e MySQL, incluindo sintaxe básica, POO e gerenciamento de bancos de dados."
-        }
-    ],
-    "skills": {
-        "languages": [
-            "PHP",
-            "Javascript",
-            "HTML",
-            "CSS"
-        ],
-        "frameworks": [
-            "Laravel",
-            "Lumen",
-            "Codeigniter",
-            "Symfony",
-            "Vue.js",
-            "React",
-            "Bootstrap",
-            "Tailwind CSS"
-        ],
-        "databases": [
-            "MySQL",
-            "PostgreSQL",
-            "MongoDB",
-            "SQL Server"
-        ],
-        "tools": [
-            "Git",
-            "Docker",
-            "Linux",
-            "Apache",
-            "Nginx",
-            "PHPUnit",
-            "Composer",
-            "NPM"
-        ],
-        "languagesLevel": {
-            "portuguese": "Nativo",
-            "english": "B2 - Intermediário Superior"
-        },
-        "interests": [
-            "Arquitetura de Software",
-            "Padrões de Design de Software",
-            "Código Limpo",
-            "Desenvolvimento Orientado a Testes",
-            "Integração Contínua",
-            "Entrega Contínua",
-            "Implantação Contínua",
-            "Microsserviços",
-            "Arquitetura Orientada a Eventos",
-            "Arquitetura Serverless",
-            "Computação em Nuvem",
-            "Aprendizado de Máquina",
-            "Inteligência Artificial",
-            "Internet das Coisas"
-        ],
-        "achievements": [
-            "Participei do Hackathon SoftExpert de outubro de 2023, alcançando um marco de conclusão de 50% para ferramentas inovadoras programadas para implementação na próxima versão.",
-            "Participei do Hackathon Vianna de janeiro de 2018, alcançando um marco de conclusão de 75% para os problemas, tornando minha equipe a segunda colocada."
-        ]
+    {
+      "company": "Printi",
+      "companyDescription": "Empresa brasileira de comércio eletrônico que oferece serviços de impressão.",
+      "location": "Remoto, Brasil",
+      "title": "Desenvolvedor Júnior Full Stack PHP",
+      "date": "03/2022 - 06/2022",
+      "description": "Contribui para aprimorar a responsividade e robustez do sistema.",
+      "milestones": [
+        "Aumentei a estabilidade e confiabilidade do sistema, aumentando a cobertura de testes unitários em 17% no primeiro trimestre.",
+        "Fomentei um ambiente de desenvolvimento colaborativo, organizando sessões de programação para compartilhamento de conhecimento entre equipes.",
+        "Implantei e integrei um sistema de notificação para novos designs, resultando em um aumento de 7% na satisfação do cliente."
+      ]
+    },
+    {
+      "company": "Reportei",
+      "companyDescription": "Startup brasileira que oferece uma ferramenta de relatórios de mídia social.",
+      "location": "Remoto, Brasil",
+      "title": "Desenvolvedor Júnior Full Stack PHP",
+      "date": "01/2021 - 03/2022",
+      "description": "Desempenhei um papel fundamental no desenvolvimento de novos recursos e manutenção do produto SaaS.",
+      "milestones": [
+        "Implementei novos recursos para a aplicação web de relatórios de marketing personalizados, resultando em um aumento de 7% na participação do usuário.",
+        "Criei páginas de pagamento usando Laravel, Blade e Livewire, resultando em um aumento de 22% nas taxas de sucesso das transações.",
+        "Liderei um projeto de intenção de saída usando Javascript, contribuindo para um aumento de 7% na retenção de clientes.",
+        "Abordei problemas de reatividade em páginas de relatórios dinâmicos usando Vue.js, resultando em uma redução de 8% nos tempos de carregamento da página.",
+        "Otimizei o processo de geração de relatórios, resultando em uma redução de 12% no tempo de geração de relatórios.",
+        "Colaborei com a equipe para implementar melhorias de desempenho em todo o banco de dados, diminuindo 15% dos tempos de consulta."
+      ]
+    },
+    {
+      "company": "App Masters",
+      "companyDescription": "Startup local brasileira que oferece consultoria em TI e soluções de software.",
+      "location": "Juiz de Fora, MG, Brasil",
+      "title": "Estagiário Back-end PHP",
+      "date": "08/2018 - 10/2018",
+      "description": "Desempenhei um papel chave no desenvolvimento inicial de um novo produto.",
+      "milestones": [
+        "Liderei o desenvolvimento de uma abrangente API RESTful para uma plataforma de criação de sites, utilizando Lumen e MySQL.",
+        "Implementei os princípios de Desenvolvimento Orientado a Testes (TDD) usando PHPUnit, no desenvolvimento de novos recursos.",
+        "Adotei o uso de controle de versão no projeto, usando Git, facilitando o desenvolvimento colaborativo e mantendo um repositório de código bem organizado."
+      ]
+    },
+    {
+      "company": "Grupo Voitto",
+      "companyDescription": "Empresa local brasileira que oferece cursos online e serviços de consultoria sobre Lean Six Sigma.",
+      "location": "Juiz de Fora, MG, Brasil",
+      "title": "Estagiário Full Stack PHP",
+      "date": "03/2018 - 07/2018",
+      "description": "Desenvolvi novos recursos e realizou manutenção para o site do curso.",
+      "milestones": [
+        "Abordei proativamente e resolvi bugs relatados pelos clientes na plataforma de vídeos dos cursos de gestão Lean Six Sigma.",
+        "Colaborei com a equipe de pesquisa para inovar e implementar um sistema de gamificação vinculado ao tempo de conclusão do curso.",
+        "Utilizei o framework Codeigniter para construir e otimizar a plataforma de vídeo para cursos de gestão Lean Six Sigma."
+      ]
     }
+  ],
+  "education": [
+    {
+      "institution": "Vianna Júnior",
+      "location": "Juiz de Fora, MG, Brasil",
+      "degree": "Tecnólogo em Sistemas para Internet",
+      "date": "2016 - 2018",
+      "description": "Disciplinas relevantes: Estruturas de Dados, Algoritmos, Programação Orientada a Objetos, Engenharia de Software, Sistemas de Gerenciamento de Bancos de Dados, Redes de Computadores, Sistemas Operacionais, Gerenciamento Ágil e Webapps."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "SOLID com PHP: princípios da programação orientada a objetos",
+      "issuer": "Alura",
+      "issue_date": "jul de 2022",
+      "credential_code": "087b096d-9474-49a5-9b63-4de784e6f5c9",
+      "competencies": ["Desenvolvimento de back-end", "PHP", "Princípios SOLID"]
+    },
+    {
+      "title": "AWS SQS: mensageria e desacoplamento de sistemas",
+      "issuer": "Alura",
+      "issue_date": "jun de 2022",
+      "credential_code": "dac68f4a-220d-4f21-a996-5eb08e5dee8b",
+      "competencies": [
+        "Desenvolvimento de back-end",
+        "AWS SQS",
+        "Microsserviços"
+      ]
+    },
+    {
+      "title": "Formação Vue.js 3",
+      "issuer": "Alura",
+      "issue_date": "jun de 2022",
+      "credential_code": "f41730e8-67f8-4a4f-aa72-957c86ede420",
+      "competencies": ["JavaScript", "Desenvolvimento de front-end", "Vue.js"]
+    },
+    {
+      "title": "MongoDB: uma alternativa aos bancos relacionais tradicionais",
+      "issuer": "Alura",
+      "issue_date": "jun de 2022",
+      "credential_code": "8bb16b93-fdca-48b4-8e2d-ed1c9375fa4a",
+      "competencies": ["Banco de dados", "MongoDB"]
+    },
+    {
+      "title": "Laravel 8 from scratch",
+      "issuer": "Laracasts",
+      "issue_date": "fev de 2022",
+      "competencies": ["Laravel", "TDD", "PHP", "API REST", "Princípios SOLID"]
+    },
+    {
+      "title": "Formação Vue.js",
+      "issuer": "Alura",
+      "issue_date": "mai de 2021",
+      "credential_code": "35cba0f5-0124-4732-9b43-63a781457cae",
+      "competencies": ["Desenvolvimento de front-end", "Vue.js"]
+    },
+    {
+      "title": "Laravel parte 2: trabalhando com Autenticação, Relacionamentos e Testes",
+      "issuer": "Alura",
+      "issue_date": "set de 2020",
+      "credential_code": "998fd4c6-bd24-4d05-a510-ecf6217ff7b1",
+      "competencies": ["Laravel", "Desenvolvimento de back-end"]
+    },
+    {
+      "title": "Doctrine ORM: acesse o banco com Mapeamento Objeto-Relacional",
+      "issuer": "Alura",
+      "issue_date": "ago de 2020",
+      "credential_code": "723280eb-e872-4f99-9b3a-29d6e7c67ef2",
+      "competencies": ["MySQL", "Banco de dados"]
+    },
+    {
+      "title": "Laravel parte 1: produtividade no desenvolvimento web",
+      "issuer": "Alura",
+      "issue_date": "ago de 2020",
+      "credential_code": "adb6e66c-66b1-4b54-81e6-dbd998c8cc6d",
+      "competencies": ["Laravel", "Desenvolvimento de back-end"]
+    },
+    {
+      "title": "MVC com PHP: entenda o padrão Model-View-Controller",
+      "issuer": "Alura",
+      "issue_date": "ago de 2020",
+      "credential_code": "eaa4dd01-c39c-4856-aa33-21f7b63149e4",
+      "competencies": ["Desenvolvimento de back-end", "PHP", "Arquitetura MVC"]
+    },
+    {
+      "title": "PHP e PDO: trabalhando com bancos de dados",
+      "issuer": "Alura",
+      "issue_date": "ago de 2020",
+      "credential_code": "73868399-b691-4363-9a29-d4c4838b77c4",
+      "competencies": [
+        "MySQL",
+        "Desenvolvimento de back-end",
+        "PHP",
+        "Banco de dados"
+      ]
+    },
+    {
+      "title": "Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "7c3357d7-f779-4d4d-af55-ebab53a5fab5",
+      "competencies": [
+        "Desenvolvimento de back-end",
+        "PHP",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "title": "Avançando com PHP: Arrays, Strings, Função e Web",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "30f466c7-3da8-45d0-a3ec-3a94478cad61",
+      "competencies": ["Desenvolvimento de back-end", "PHP"]
+    },
+    {
+      "title": "Orientação a Objetos com PHP: Classes, métodos e atributos",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "3da6ff13-f879-4d7b-9c53-96666c04d680",
+      "competencies": [
+        "Desenvolvimento de back-end",
+        "PHP",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "title": "PHP Composer: Dependências, Autoload e Publicação",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "583ac375-1548-41f6-90a9-cd3154a54d5b",
+      "competencies": ["Desenvolvimento de back-end", "PHP"]
+    },
+    {
+      "title": "PHP Exceptions: tratamento de erros",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "43e1d240-323b-46a7-b0df-9c69fda97ff0",
+      "competencies": ["Desenvolvimento de back-end", "PHP"]
+    },
+    {
+      "title": "PHP: manipulando coleções com Arrays",
+      "issuer": "Alura",
+      "issue_date": "mai de 2020",
+      "credential_code": "9c6549be-5dab-4f4b-abc2-0b8656079d12",
+      "competencies": ["Desenvolvimento de back-end", "PHP"]
+    },
+    {
+      "title": "PHP: conceitos, lidando com dados, loops e mais",
+      "issuer": "Alura",
+      "issue_date": "mar de 2020",
+      "credential_code": "273dedb4-247a-405a-992b-b4198a1d3691",
+      "competencies": ["PHP"]
+    },
+    {
+      "title": "JavaScript: conhecendo o Browser e padrões de projeto",
+      "issuer": "Alura",
+      "issue_date": "mar de 2019",
+      "credential_code": "2ba2aee8-7d22-4376-8877-9c743c755f57",
+      "competencies": ["JavaScript"]
+    },
+    {
+      "title": "Web Design Responsivo: Páginas que se adaptam do mobile ao desk",
+      "issuer": "Alura",
+      "issue_date": "mar de 2019",
+      "credential_code": "d6df716e-6f88-498a-b38c-d322d3b1a09a",
+      "competencies": ["CSS"]
+    },
+    {
+      "title": "Git: Controle e compartilhe seu código",
+      "issuer": "Alura",
+      "issue_date": "fev de 2018",
+      "credential_code": "b1e3733b-3d80-4cf7-8387-0b53b0fac510",
+      "competencies": ["Git"]
+    }
+  ],
+  "skills": {
+    "languages": ["PHP", "Javascript", "HTML", "CSS"],
+    "frameworks": [
+      "Laravel",
+      "Lumen",
+      "Codeigniter",
+      "Symfony",
+      "Vue.js",
+      "React",
+      "Bootstrap",
+      "Tailwind CSS"
+    ],
+    "databases": ["MySQL", "PostgreSQL", "MongoDB", "SQL Server"],
+    "tools": [
+      "Git",
+      "Docker",
+      "Linux",
+      "Apache",
+      "Nginx",
+      "PHPUnit",
+      "Composer",
+      "NPM"
+    ],
+    "languagesLevel": {
+      "portuguese": "Nativo",
+      "english": "B2 - Intermediário Superior"
+    },
+    "interests": [
+      "Arquitetura de Software",
+      "Padrões de Design de Software",
+      "Código Limpo",
+      "Desenvolvimento Orientado a Testes",
+      "Integração Contínua",
+      "Entrega Contínua",
+      "Implantação Contínua",
+      "Microsserviços",
+      "Arquitetura Orientada a Eventos",
+      "Arquitetura Serverless",
+      "Computação em Nuvem",
+      "Aprendizado de Máquina",
+      "Inteligência Artificial",
+      "Internet das Coisas"
+    ],
+    "achievements": [
+      "Participei do Hackathon SoftExpert de outubro de 2023, alcançando um marco de conclusão de 50% para ferramentas inovadoras programadas para implementação na próxima versão.",
+      "Participei do Hackathon Vianna de janeiro de 2018, alcançando um marco de conclusão de 75% para os problemas, tornando minha equipe a segunda colocada."
+    ]
+  }
 }
