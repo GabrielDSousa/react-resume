@@ -6,7 +6,7 @@ const ProfessionalSummary = ({ professionalSummary }) => {
 
   return (
     <div className="mb-8">
-      <div className="text-2xl font-bold mb-2">{title}</div>
+      <div className="text-2xl font-bold mb-2 text-lime-950">{title}</div>
       <p>{summary}</p>
     </div>
   );

@@ -1,12 +1,14 @@
 // Skills.js
 import React from 'react';
+import { useLanguage } from '../hooks/LanguageContext';
 
 const Skills = ({ skills }) => {
   const { languages, frameworks, databases, tools, languagesLevel, interests, achievements } = skills;
+  const { lang } = useLanguage();
 
   return (
     <div className="mb-8">
-      <div className="text-2xl font-bold mb-4">Skills</div>
+      <div className="text-2xl font-bold mb-4">{ lang === "pt" ? "Conhecimentos" : "Skills"}</div>
       
       <div className="mb-6">
         <div className="text-lg font-bold mb-2">Languages</div>

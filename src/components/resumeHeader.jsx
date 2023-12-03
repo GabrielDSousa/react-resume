@@ -38,14 +38,14 @@ const ResumeHeader = ({ personalInfo }) => {
           <span className="inline print:hidden">
             <a href="https://www.linkedin.com/in/GabrielDSousa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </span>
-          <span className="hidden print:inline">https://www.linkedin.com/in/GabrielDSousa/</span>
+          <span className="hidden print:inline">linkedin.com/in/GabrielDSousa</span>
         </div>
         <div className="text-lg flex items-center">
           <i className="fa fa-github pr-2"></i>
           <span className="inline print:hidden">
             <a href="https://github.com/GabrielDSousa" target="_blank" rel="noopener noreferrer">GitHub</a>
           </span>
-          <span className="hidden print:inline">https://github.com/GabrielDSousa</span>
+          <span className="hidden print:inline">github.com/GabrielDSousa</span>
         </div>
       </div>
     </div>
