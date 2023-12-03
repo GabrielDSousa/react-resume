@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <Seo />
-        <div className="flex flex-col min-h-screen bg-neutral-50 text-neutral-950 print:text-sm">
+        <div className="flex flex-col min-h-screen bg-neutral-50 text-neutral-950 print:text-sm font-sans print:tracking-tigh print:leading-tight">
           <div className="flex-grow">
              <LanguageProvider>
                 <div>
