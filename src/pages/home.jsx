@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section
       name="a4-resume"
-      className="max-w-[210mm] mx-auto p-4 border border-solid border-gray-500 rounded print:border-none"
+      className="max-w-[210mm] mx-auto border border-solid border-gray-500 rounded print:border-none"
     >
       <ResumeHeader personalInfo={translated.personalInfo} />
       <ProfessionalSummary
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="col-span-2">
           <WorkExperience experience={translated.workExperience} />
         </div>
-        <div className="h-full bg-lime-950">
+        <div className="h-full bg-lime-400 bg-opacity-20">
           <Education education={translated.education} />
           <Skills skills={translated.skills} />
         </div>

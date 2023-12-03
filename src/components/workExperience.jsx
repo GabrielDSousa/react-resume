@@ -5,7 +5,7 @@ const WorkExperience = ({ experience }) => {
   const { lang } = useLanguage();
   
   return (
-    <div className="mb-8 print:mb-4">
+    <div className="mb-8 print:mb-4 p-4">
       <div className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950">{ lang === "pt" ? "Experiência profissional" : "Work Experience"}</div>
       {experience.map((job, index) => (
         <div key={index} className= "mb-6 print:mb-3">

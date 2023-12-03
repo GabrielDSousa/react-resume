@@ -5,7 +5,7 @@ const ResumeHeader = ({ personalInfo }) => {
   const { name, title, location, email, phone } = personalInfo;
 
   return (
-    <div className="mb-8 print:mb-4 flex items-center">
+    <div className="mb-8 print:mb-4 flex items-center p-4">
       {/* Profile Picture with Shadow */}
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
