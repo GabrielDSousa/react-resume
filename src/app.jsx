@@ -22,7 +22,7 @@ export default function App() {
                 </div>
               </LanguageProvider>
           </div>
-          <MenuFooter />
+          <MenuFooter className="print:hidden"/>
         </div>
     </Router>
     

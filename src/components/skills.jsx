@@ -55,7 +55,7 @@ const Skills = ({ skills }) => {
         </ul>
       </div>
 
-      <div className="mb-6 print:mb-3">
+      <div className="mb-6 print:hidden">
         <div className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1">{ lang === "pt" ? "Interesses" : "Interests"}</div>
         <ul className="list-disc pl-6 print:pl-3">
           {interests.map((interest, index) => (
