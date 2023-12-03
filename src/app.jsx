@@ -11,10 +11,27 @@ import Seo from './components/seo.jsx';
 
 // Home function that is reflected across the site
 export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check user's preference from localStorage or system preference
+    const prefersDarkMode =
+      localStorage.getItem('darkMode') === 'true' ||
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    setIsDarkMode(prefersDarkMode);
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', String(newDarkMode));
+  };
+  
   return (
     <Router>
       <Seo />
-      <Menu />
+      <Menu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <div className="flex flex-col min-h-screen bg-neutral-50 text-neutral-950 print:text-sm font-sans print:tracking-tigh print:leading-tight">
           <div className="flex-grow">
              <LanguageProvider>
