@@ -1,37 +1,46 @@
 import React, { useState, useEffect } from "react";
 import { Router } from "wouter";
 import { LanguageProvider } from "./hooks/LanguageContext";
-
-// Where all of our pages come from
 import PageRouter from "./components/router.jsx";
 import Menu from "./components/menu.jsx";
-
-// The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
 
-// Home function that is reflected across the site
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    // Check user's preference from localStorage or system preference
-    const prefersDarkMode =
-      localStorage.getItem("darkMode") === "true" ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    // Toggle the 'dark' class on the root html element
-    document.documentElement.classList.toggle("dark", prefersDarkMode);
-    setIsDarkMode(prefersDarkMode);
-  }, []);
+  const prefersDarkMode =
+    localStorage.getItem("darkMode") === "true" ||
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   const toggleDarkMode = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
     localStorage.setItem("darkMode", String(newDarkMode));
-
-    // Toggle the 'dark' class on the root html element
     document.documentElement.classList.toggle("dark", newDarkMode);
   };
+
+  const handlePrint = () => {
+    document.documentElement.classList.remove("dark");
+  };
+
+  const handleAfterPrint = () => {
+    document.documentElement.classList.toggle("dark", isDarkMode);
+  };
+
+  useEffect(() => {
+    window.addEventListener("beforeprint", handlePrint);
+    window.addEventListener("afterprint", handleAfterPrint);
+
+    return () => {
+      window.removeEventListener("beforeprint", handlePrint);
+      window.removeEventListener("afterprint", handleAfterPrint);
+    };
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", prefersDarkMode);
+    setIsDarkMode(prefersDarkMode);
+  }, [prefersDarkMode]);
 
   return (
     <Router>
