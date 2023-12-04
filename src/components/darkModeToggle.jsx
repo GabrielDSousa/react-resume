@@ -4,8 +4,8 @@ import React from "react";
 const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <button
-      className={`p-2 rounded-full border border-gray-300 ${
-        isDarkMode ? "dark:border-white dark:bg-gray-800" : "bg-white"
+      className={`p-2 rounded-full border border-lime-300 ${
+        isDarkMode ? "dark:border-lime-50 dark:bg-lime-800" : "bg-lime-50"
       }`}
       onClick={toggleDarkMode}
     >

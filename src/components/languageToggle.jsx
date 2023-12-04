@@ -28,7 +28,7 @@ const LanguageToggle = () => {
   };
 
   return (
-    <div className="flex rounded-full p-4 ">
+    <div className="flex rounded-full p-4 bg-lime-950">
       <button
         onClick={toggleLanguage}
         className={`mr-2 px-4 py-2 rounded-full ${
