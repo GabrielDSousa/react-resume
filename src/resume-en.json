@@ -4,7 +4,7 @@
     "email": "gabrielramos.email@gmail.com",
     "phone": "+55 32 9 9139-5135",
     "github": "https://github.com/GabrielDSousa",
-    "linkedin": "https://www.linkedin.com/in/GabrielDSousa/",
+    "linkedin": "https://www.linkedin.com/in/gabrieldsousa/?locale=en_US",
     "location": "Juiz de Fora, MG, Brazil"
   },
   "professionalSummary": {
@@ -104,9 +104,19 @@
     {
       "institution": "Vianna Júnior",
       "location": "Juiz de Fora, MG, Brazil",
-      "degree": "Technologist in Systems for Internet",
+      "degree": "Technologist in Internet Systems",
       "date": "2016 - 2018",
-      "description": "Relevant coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Database Management Systems, Computer Networks, Operating Systems, Agile management and Webapps."
+      "classes": [
+        "Data Structures",
+        "Algorithms",
+        "Object-Oriented Programming",
+        "Software Engineering",
+        "Database Management Systems",
+        "Computer Networks",
+        "Operating Systems",
+        "Agile Management",
+        "Progressive Web Apps"
+      ]
     }
   ],
   "certifications": [

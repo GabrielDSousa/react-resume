@@ -1,7 +1,9 @@
 import React from "react";
+import { useLanguage } from '../hooks/LanguageContext';
 
 const ResumeHeader = ({ personalInfo }) => {
-  const { name, title, location, email, phone } = personalInfo;
+  const { name, title, location, email, phone, linkedin, github } = personalInfo;
+  const { lang } = useLanguage();
   
   // Function to format phone number to international format without spaces and dashes
   const formatPhoneNumber = (phoneNumber) => {
@@ -49,12 +51,12 @@ const ResumeHeader = ({ personalInfo }) => {
         </div>
 
         {/* Social Links Grid */}
-        <div className="flex flex-col md:self-end print:ml-4">
+        <div className="flex flex-col md:self-end print:self-end print:ml-4">
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-linkedin pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a
-                href="https://www.linkedin.com/in/GabrielDSousa/"
+                href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -62,14 +64,14 @@ const ResumeHeader = ({ personalInfo }) => {
               </a>
             </span>
             <span className="hidden print:inline">
-              linkedin.com/in/GabrielDSousa
+              linkedin.com/in/GabrielDSousa${lang === 'pt' ? 'Educação' : 'Education'}
             </span>
           </div>
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-github pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a
-                href="https://github.com/GabrielDSousa"
+                href={github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
