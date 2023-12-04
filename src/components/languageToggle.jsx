@@ -11,7 +11,7 @@ const LanguageToggle = () => {
     setLang(newLang);
 
     // Get the current URL and search parameters
-    const currentUrl = window.location.pathname + window.location.search;
+    const currentUrl = window.location.pathname;
     const searchParams = new URLSearchParams(window.location.search);
 
     // Remove any existing lang parameter
@@ -28,9 +28,24 @@ const LanguageToggle = () => {
   };
 
   return (
-    <button onClick={toggleLanguage}>
-      {lang === 'en' ? 'Switch to Portuguese' : 'Trocar para Inglês'}
-    </button>
+    <div className="flex rounded-full p-4 ">
+      <button
+        onClick={toggleLanguage}
+        className={`mr-2 px-4 py-2 rounded-full ${
+          lang === 'en' ? 'bg-lime-500 text-neutral-50' : 'bg-gray-200 text-neutral-950'
+        }`}
+      >
+        English
+      </button>
+      <button
+        onClick={toggleLanguage}
+        className={`px-4 py-2 rounded-full ${
+          lang === 'pt' ? 'bg-lime-500 text-neutral-50' : 'bg-gray-200 text-neutral-950'
+        }`}
+      >
+        Portuguese
+      </button>
+    </div>
   );
 };
 
