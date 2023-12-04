@@ -1,15 +1,16 @@
 import React from "react";
-import { useLanguage } from '../hooks/LanguageContext';
+import { useLanguage } from "../hooks/LanguageContext";
 
 const ResumeHeader = ({ personalInfo }) => {
-  const { name, title, location, email, phone, linkedin, github } = personalInfo;
+  const { name, title, location, email, phone, linkedin, github } =
+    personalInfo;
   const { lang } = useLanguage();
-  
+
   // Function to format phone number to international format without spaces and dashes
   const formatPhoneNumber = (phoneNumber) => {
-    return phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
+    return phoneNumber.replace(/\D/g, ""); // Remove non-numeric characters
   };
-  
+
   const formattedPhone = formatPhoneNumber(phone);
 
   return (
@@ -35,14 +36,24 @@ const ResumeHeader = ({ personalInfo }) => {
           <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-envelope pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
-              <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">{email}</a>
+              <a
+                href={`mailto:${email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {email}
+              </a>
             </span>
             <span className="hidden print:inline">{email}</span>
           </div>
           <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-phone pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
-              <a href={`https://wa.me/${formattedPhone}`} target="_blank" rel="noopener noreferrer">
+              <a
+                href={`https://wa.me/${formattedPhone}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {phone}
               </a>
             </span>
@@ -55,26 +66,20 @@ const ResumeHeader = ({ personalInfo }) => {
           <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-linkedin pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
-              <a
-                href={linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={linkedin} target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </span>
             <span className="hidden print:inline">
-              {`linkedin.com/in/GabrielDSousa${lang === 'pt' ? '' : '/?locale=en_US'}`}
+              {`linkedin.com/in/GabrielDSousa${
+                lang === "pt" ? "" : "/?locale=en_US"
+              }`}
             </span>
           </div>
           <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-github pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={github} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </span>

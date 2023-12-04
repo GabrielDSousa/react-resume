@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 import { Link } from "wouter";
-import DarkModeToggle from "./DarkModeToggle"
-import LanguageToggle from "./LanguageToggle"
-import PrintButton from "./PrintButton"
+import DarkModeToggle from "./DarkModeToggle";
+import LanguageToggle from "./LanguageToggle";
+import PrintButton from "./PrintButton";
 
-
-const PageMenu = ({ isDarkMode, toggleDarkMode }) => {  
-  return (   
+const PageMenu = ({ isDarkMode, toggleDarkMode }) => {
+  return (
     <div className="p-4 mb-4 print:hidden">
       <div className="flex justify-around items-center">
         <div>
@@ -14,7 +13,10 @@ const PageMenu = ({ isDarkMode, toggleDarkMode }) => {
         </div>
         <div className="flex">
           <PrintButton isDarkMode={isDarkMode} />
-          <DarkModeToggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+          <DarkModeToggle
+            isDarkMode={isDarkMode}
+            toggleDarkMode={toggleDarkMode}
+          />
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
-import React from 'react';
-import { useLanguage } from '../hooks/LanguageContext';
+import React from "react";
+import { useLanguage } from "../hooks/LanguageContext";
 
 const LanguageToggle = () => {
   const { lang, setLang } = useLanguage();
 
   const toggleLanguage = () => {
-    const newLang = lang === 'en' ? 'pt' : 'en';
+    const newLang = lang === "en" ? "pt" : "en";
 
     // Update language state
     setLang(newLang);
@@ -15,16 +15,18 @@ const LanguageToggle = () => {
     const searchParams = new URLSearchParams(window.location.search);
 
     // Remove any existing lang parameter
-    searchParams.delete('lang');
+    searchParams.delete("lang");
 
     // Add the new lang parameter
-    searchParams.set('lang', newLang);
+    searchParams.set("lang", newLang);
 
     // Create the new URL
-    const newUrl = currentUrl + (searchParams.toString() ? `?${searchParams.toString()}` : '');
+    const newUrl =
+      currentUrl +
+      (searchParams.toString() ? `?${searchParams.toString()}` : "");
 
     // Update URL without a reload
-    window.history.pushState({ path: newUrl }, '', newUrl);
+    window.history.pushState({ path: newUrl }, "", newUrl);
   };
 
   return (
@@ -32,7 +34,9 @@ const LanguageToggle = () => {
       <button
         onClick={toggleLanguage}
         className={`mr-2 px-4 py-2 rounded-full ${
-          lang === 'en' ? 'bg-lime-500 text-neutral-50' : 'bg-gray-200 text-neutral-950'
+          lang === "en"
+            ? "bg-lime-500 text-neutral-50"
+            : "bg-gray-200 text-neutral-950"
         }`}
       >
         English
@@ -40,7 +44,9 @@ const LanguageToggle = () => {
       <button
         onClick={toggleLanguage}
         className={`px-4 py-2 rounded-full ${
-          lang === 'pt' ? 'bg-lime-500 text-neutral-50' : 'bg-gray-200 text-neutral-950'
+          lang === "pt"
+            ? "bg-lime-500 text-neutral-50"
+            : "bg-gray-200 text-neutral-950"
         }`}
       >
         Portuguese
