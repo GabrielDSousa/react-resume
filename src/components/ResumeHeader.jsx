@@ -64,7 +64,7 @@ const ResumeHeader = ({ personalInfo }) => {
               </a>
             </span>
             <span className="hidden print:inline">
-              linkedin.com/in/GabrielDSousa${lang === 'pt' ? 'Educação' : 'Education'}
+              {`linkedin.com/in/GabrielDSousa${lang === 'pt' ? '' : '/?locale=en_US'}`}
             </span>
           </div>
           <div className="text-lg print:text-sm flex items-center">
