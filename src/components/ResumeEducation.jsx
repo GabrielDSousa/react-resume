@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLanguage } from '../hooks/LanguageContext';
 
-const Education = ({ education }) => {
+const ResumeEducation = ({ education }) => {
   const { lang } = useLanguage();
   
   return (
@@ -21,4 +21,4 @@ const Education = ({ education }) => {
   );
 };
 
-export default Education;
+export default ResumeEducation;

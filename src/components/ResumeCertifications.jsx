@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../hooks/LanguageContext';
 
-const Certifications = ({ certifications }) => {
+const ResumeCertifications = ({ certifications }) => {
   const { lang } = useLanguage();
   
   return (
@@ -26,4 +26,4 @@ const Certifications = ({ certifications }) => {
   );
 };
 
-export default Certifications;
+export default ResumeCertifications;

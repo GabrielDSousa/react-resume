@@ -1,12 +1,11 @@
-// App.js
 import React from "react";
 import { useLanguage } from "../hooks/LanguageContext";
-import ResumeHeader from "../components/resumeHeader";
-import ProfessionalSummary from "../components/professionalSummary";
-import WorkExperience from "../components/workExperience";
-import Education from "../components/education";
-import Certifications from "../components/certifications";
-import Skills from "../components/skills";
+import ResumeHeader from "../components/ResumeHeader";
+import ProfessionalSummary from "../components/ProfessionalSummary";
+import WorkExperience from "../components/WorkExperience";
+import ResumeEducation from "../components/ResumeEducation";
+import ResumeCertifications from "../components/ResumeCertifications";
+import ResumeSkills from "../components/ResumeSkills";
 import English from "../resume-en.json";
 import Portuguese from "../resume-pt.json";
 
@@ -29,12 +28,12 @@ const Home = () => {
           <WorkExperience experience={translated.workExperience} />
         </div>
         <div className="h-full bg-lime-400 bg-opacity-20">
-          <Education education={translated.education} />
-          <Skills skills={translated.skills} />
+          <ResumeEducation education={translated.education} />
+          <ResumeSkills skills={translated.skills} />
         </div>
       </div>
       
-      <Certifications certifications={translated.certifications} />
+      <ResumeCertifications certifications={translated.certifications} />
     </section>
   );
 };

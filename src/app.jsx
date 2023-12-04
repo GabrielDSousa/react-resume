@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Router } from "wouter";
 import { LanguageProvider } from "./hooks/LanguageContext";
 import PageRouter from "./components/router.jsx";
-import Menu from "./components/menu.jsx";
+import PageMenu from "./components/PageMenu.jsx";
 import Seo from "./components/seo.jsx";
 
 export default function App() {
@@ -46,7 +46,7 @@ export default function App() {
     <Router>
       <Seo />
       <LanguageProvider>
-        <Menu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <div className="flex flex-col min-h-screen">
           <div className="flex-grow">
             <div>

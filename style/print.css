@@ -1,0 +1,14 @@
+@media print {
+  /* Hide automatic marks */
+  .page-break {
+    page-break-before: auto;
+  }
+
+  .print-timestamp {
+    display: none;
+  }
+
+  .print-url {
+    display: none;
+  }
+}

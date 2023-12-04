@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLanguage } from '../hooks/LanguageContext';
 
-const Skills = ({ skills }) => {
+const ResumeSkills = ({ skills }) => {
   const { languages, frameworks, databases, tools, languagesLevel, interests, achievements } = skills;
   const { lang } = useLanguage();
 
@@ -76,4 +76,4 @@ const Skills = ({ skills }) => {
   );
 };
 
-export default Skills;
+export default ResumeSkills;
