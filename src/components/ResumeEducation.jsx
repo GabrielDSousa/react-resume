@@ -6,7 +6,7 @@ const ResumeEducation = ({ education }) => {
   const { lang } = useLanguage();
   
   return (
-    <div className="mb-8 print:mb-4 p-4">
+    <div className="flex flex-col justify-between">
       <div className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">{lang === "pt" ? "Educação" : "Education"}</div>
       {education.map((edu, index) => (
         <div key={index} className="mb-6 print:mb-3">

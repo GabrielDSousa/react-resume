@@ -5,7 +5,7 @@ const ResumeHeader = ({ personalInfo }) => {
   const { name, title, location, email, phone } = personalInfo;
 
   return (
-    <div className="mb-8 print:mb-4 flex items-center p-4">
+    <div className="mb-8 print:mb-4 flex items-center p-4 ">
       {/* Profile Picture with Shadow */}
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
@@ -13,7 +13,7 @@ const ResumeHeader = ({ personalInfo }) => {
         className="rounded-full object-cover h-20 w-20 md:h-32 md:w-32 print:h-32 print:w-32 mr-4 print:mr-2 shadow-md shadow-lime-500 drop-shadow-2xl print:drop-shadow-xl"
       />
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
           <div className="text-3xl print:text-base font-bold pb-4 print:pb-2">
