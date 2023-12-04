@@ -1,8 +1,14 @@
-// ResumeHeader.js
 import React from "react";
 
 const ResumeHeader = ({ personalInfo }) => {
   const { name, title, location, email, phone } = personalInfo;
+  
+  // Function to format phone number to international format without spaces and dashes
+  const formatPhoneNumber = (phoneNumber) => {
+    return phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
+  };
+  
+  const formattedPhone = formatPhoneNumber(phone);
 
   return (
     <div className="mb-8 print:mb-4 flex items-center p-4 ">
@@ -26,11 +32,19 @@ const ResumeHeader = ({ personalInfo }) => {
           </div>
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-envelope pr-2 print:pr-1"></i>
-            {email}
+            <span className="inline print:hidden">
+              <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">{email}</a>
+            </span>
+            <span className="hidden print:inline">{email}</span>
           </div>
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-phone pr-2 print:pr-1"></i>
-            {phone}
+            <span className="inline print:hidden">
+              <a href={`https://wa.me/${formattedPhone}`} target="_blank" rel="noopener noreferrer">
+                {phone}
+              </a>
+            </span>
+            <span className="hidden print:inline">{phone}</span>
           </div>
         </div>
 

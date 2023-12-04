@@ -8,7 +8,7 @@ const ResumeSkills = ({ skills }) => {
 
   return (
     <div className="flex flex-col justify-between">
-      <div className="text-base md:text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">{ lang === "pt" ? "Conhecimentos" : "Skills"}</div>
+      <div className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">{ lang === "pt" ? "Conhecimentos" : "Skills"}</div>
       
       <div className="mb-6 print:mb-3">
         <div className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">{ lang === "pt" ? "Linguagens de programação" : "Program Languages"}</div>
