@@ -24,22 +24,22 @@ const ResumeHeader = ({ personalInfo }) => {
       <div className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
-          <div className="text-3xl print:text-base font-bold pb-4 print:pb-2">
+          <div className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
             {name}
           </div>
-          <div className="text-lg print:text-sm">{title}</div>
-          <div className="text-lg print:text-sm flex items-center">
+          <div className="text-base md:text-lg print:text-sm">{title}</div>
+          <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-map-marker pl-1 pr-3 print:pr-0.5 print:pr-1.5"></i>
             {location}
           </div>
-          <div className="text-lg print:text-sm flex items-center">
+          <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-envelope pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">{email}</a>
             </span>
             <span className="hidden print:inline">{email}</span>
           </div>
-          <div className="text-lg print:text-sm flex items-center">
+          <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-phone pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a href={`https://wa.me/${formattedPhone}`} target="_blank" rel="noopener noreferrer">
@@ -52,7 +52,7 @@ const ResumeHeader = ({ personalInfo }) => {
 
         {/* Social Links Grid */}
         <div className="flex flex-col md:self-end print:self-end print:ml-4">
-          <div className="text-lg print:text-sm flex items-center">
+          <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-linkedin pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a
@@ -67,7 +67,7 @@ const ResumeHeader = ({ personalInfo }) => {
               {`linkedin.com/in/GabrielDSousa${lang === 'pt' ? '' : '/?locale=en_US'}`}
             </span>
           </div>
-          <div className="text-lg print:text-sm flex items-center">
+          <div className="text-base md:text-lg print:text-sm flex items-center">
             <i className="fa fa-github pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
               <a
