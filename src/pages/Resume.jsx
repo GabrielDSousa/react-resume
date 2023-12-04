@@ -9,7 +9,7 @@ import ResumeSkills from "../components/ResumeSkills";
 import English from "../resume-en.json";
 import Portuguese from "../resume-pt.json";
 
-const Home = () => {
+const Resume = () => {
   const { lang } = useLanguage();
 
   const translated = lang === "pt" ? Portuguese : English;
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <section
       name="a4-resume"
-      className="max-w-[210mm] mx-auto border border-solid border-gray-500 rounded print:border-none"
+      className="max-w-[210mm] mx-auto border border-solid border-none md:border-lime-950 md:dark:border-lime-600 rounded print:border-none"
     >
       <ResumeHeader personalInfo={translated.personalInfo} />
       <ProfessionalSummary
@@ -38,4 +38,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Resume;

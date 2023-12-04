@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "wouter";
-import DarkModeToggle from "./darkModeToggle"
-import LanguageToggle from "./languageToggle"
-import PrintButton from "./printButton"
+import DarkModeToggle from "./DarkModeToggle"
+import LanguageToggle from "./LanguageToggle"
+import PrintButton from "./PrintButton"
 
 
 const PageMenu = ({ isDarkMode, toggleDarkMode }) => {  
