@@ -35,7 +35,7 @@ const ResumeHeader = ({ personalInfo }) => {
         </div>
 
         {/* Social Links Grid */}
-        <div className="flex flex-col self-end print:ml-4">
+        <div className="flex flex-col md:self-end print:ml-4">
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-linkedin pr-2 print:pr-1"></i>
             <span className="inline print:hidden">
