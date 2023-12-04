@@ -10,10 +10,10 @@ const ResumeHeader = ({ personalInfo }) => {
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
         alt="Profile"
-        className="rounded-full object-cover h-32 w-32 print:h-18 print:w-18 mr-4 print:mr-2 shadow-md shadow-lime-500 drop-shadow-2xl print:drop-shadow-xl"
+        className="rounded-full object-cover h-20 w-20 md:h-32 md:w-32 print:h-32 print:w-32 mr-4 print:mr-2 shadow-md shadow-lime-500 drop-shadow-2xl print:drop-shadow-xl"
       />
 
-      <div className="flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
           <div className="text-3xl print:text-base font-bold pb-4 print:pb-2">
@@ -35,7 +35,7 @@ const ResumeHeader = ({ personalInfo }) => {
         </div>
 
         {/* Social Links Grid */}
-        <div className="flex flex-col print:ml-4">
+        <div className="flex flex-col self-end print:ml-4">
           <div className="text-lg print:text-sm flex items-center">
             <i className="fa fa-linkedin pr-2 print:pr-1"></i>
             <span className="inline print:hidden">

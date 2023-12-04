@@ -23,7 +23,7 @@ const Resume = () => {
       <ProfessionalSummary
             professionalSummary={translated.professionalSummary}
           />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="flex flex-col print:md:grid print:md:grid-cols-3 print:md:gap-4 print:grid print:grid-cols-3 print:gap-4">
         <div className="col-span-2">
           <WorkExperience experience={translated.workExperience} />
         </div>
