@@ -5,13 +5,15 @@ import PageRouter from "./components/router.jsx";
 import PageMenu from "./components/PageMenu.jsx";
 import Seo from "./components/seo.jsx";
 
-export default function App() {
+const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Check user's dark mode preference
   const prefersDarkMode =
     localStorage.getItem("darkMode") === "true" ||
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+  // Toggle dark mode
   const toggleDarkMode = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
@@ -19,18 +21,22 @@ export default function App() {
     document.documentElement.classList.toggle("dark", newDarkMode);
   };
 
+  // Handle dark mode before printing
   const handlePrint = () => {
     document.documentElement.classList.remove("dark");
   };
 
+  // Handle dark mode after printing
   const handleAfterPrint = () => {
     document.documentElement.classList.toggle("dark", isDarkMode);
   };
 
   useEffect(() => {
+    // Add event listeners for print events
     window.addEventListener("beforeprint", handlePrint);
     window.addEventListener("afterprint", handleAfterPrint);
 
+    // Remove event listeners on component unmount
     return () => {
       window.removeEventListener("beforeprint", handlePrint);
       window.removeEventListener("afterprint", handleAfterPrint);
@@ -38,6 +44,7 @@ export default function App() {
   }, [isDarkMode]);
 
   useEffect(() => {
+    // Apply user's dark mode preference
     document.documentElement.classList.toggle("dark", prefersDarkMode);
     setIsDarkMode(prefersDarkMode);
   }, [prefersDarkMode]);
@@ -57,4 +64,6 @@ export default function App() {
       </LanguageProvider>
     </Router>
   );
-}
+};
+
+export default App;
