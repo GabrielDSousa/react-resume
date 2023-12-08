@@ -12,6 +12,19 @@ const ResumeHeader = ({ personalInfo }) => {
   };
 
   const formattedPhone = formatPhoneNumber(phone);
+  
+  const completeLink = (incompleteLink) => {
+    // Check if the link starts with 'http://' or 'https://'
+    if (
+      incompleteLink.startsWith("http://") ||
+      incompleteLink.startsWith("https://")
+    ) {
+      return incompleteLink; // Link is already complete
+    } else {
+      // Link is incomplete, add 'https://'
+      return `https://${incompleteLink}`;
+    }
+  };
 
   return (
     <header className="mb-8 print:mb-4 flex items-center p-4">
@@ -35,8 +48,8 @@ const ResumeHeader = ({ personalInfo }) => {
 
         {/* Social Links Grid */}
         <div className="flex flex-col md:self-end print:self-end print:ml-4">
-          {renderSocialLink("fa fa-linkedin", linkedin, "LinkedIn")}
-          {renderSocialLink("fa fa-github", github, "GitHub")}
+          {renderSocialLink("fa fa-linkedin", linkedin, "LinkedIn", completeLink(linkedin))}
+          {renderSocialLink("fa fa-github", github, "GitHub", completeLink(github))}
         </div>
       </div>
     </header>
@@ -61,11 +74,11 @@ const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone =
   </section>
 );
 
-const renderSocialLink = (iconClass, link, text) => (
+const renderSocialLink = (iconClass, link, text, completeLink) => (
   <section name="socialLink" className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className="inline print:hidden">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={completeLink} target="_blank" rel="noopener noreferrer">
         {text}
       </a>
     </span>
