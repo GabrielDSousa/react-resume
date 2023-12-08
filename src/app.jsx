@@ -60,10 +60,10 @@ const App = () => {
   return (
     <Router>
       <Seo />
-      <main style={containerStyle}>
+      <main className="min-h-screen" style={containerStyle}>
         <LanguageProvider>
           <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-          <div className="flex flex-col min-h-screen flex-grow">
+          <div className="flex flex-col flex-grow">
             <PageRouter />
           </div>
         </LanguageProvider>
