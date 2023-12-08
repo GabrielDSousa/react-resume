@@ -1,3 +1,5 @@
+// App.jsx
+
 import React, { useState, useEffect } from "react";
 import { Router } from "wouter";
 import { LanguageProvider } from "./hooks/LanguageContext";
@@ -31,19 +33,6 @@ const App = () => {
     document.documentElement.classList.toggle("dark", isDarkMode);
   };
 
-  const backgroundSvg = isDarkMode
-    ? `url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation-dark.svg?v=1702073310062")`
-    : `url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/radiant-gradient.svg?v=1702075042421")`;
-
-  const containerStyle = {
-    backgroundImage: backgroundSvg, // camelCase for background-image
-    backgroundSize: isDarkMode ? "auto" : "cover",
-    backgroundColor: "#0A0A0A",
-    backgroundPosition: "center",
-    backgroundRepeat: "repeat",
-    backgroundAttachment: "scroll",
-  };
-
   useEffect(() => {
     // Add event listeners for print events
     window.addEventListener("beforeprint", handlePrint);
@@ -65,7 +54,7 @@ const App = () => {
   return (
     <Router>
       <Seo />
-      <main className="min-h-screen" style={containerStyle}>
+      <main className="min-h-screen background">
         <LanguageProvider>
           <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
           <div className="flex flex-col flex-grow">

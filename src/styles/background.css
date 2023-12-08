@@ -1,0 +1,16 @@
+body.dark {
+  --container-background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation-dark.svg?v=1702073310062");
+}
+
+body:not(.dark) {
+  --container-background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/radiant-gradient.svg?v=1702075042421");
+}
+
+.background {
+  background-image: var(--container-background-image);
+  background-size: cover;
+  background-color: #0A0A0A;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
