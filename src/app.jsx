@@ -32,11 +32,12 @@ const App = () => {
   };
 
   const containerStyle = {
-    backgroundImage: `url(https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation.svg?v=1702071126869)`,
-    backgroundSize: "cover",
+        backgroundImage: `url(https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation.svg?v=1702071126869)`,
+    backgroundSize: "contain",
     backgroundPosition: "center",
-    height: "100vh", // Set the height of the container
-    // Add any additional styles as needed
+    minHeight: "100vh",
+    display: "flex",  // Added display: flex to make sure the container expands vertically
+    flexDirection: "column"
   };
 
   useEffect(() => {
