@@ -35,7 +35,7 @@ const ResumeHeader = ({ personalInfo }) => {
         className="rounded-full object-cover h-20 w-20 md:h-32 md:w-32 print:h-32 print:w-32 mr-4 print:mr-2 shadow-md shadow-lime-500 drop-shadow-2xl print:drop-shadow-xl"
       />
 
-      <div className="flex flex-col md:flex-row print:flex-row">
+      <address className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
           <h2 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
@@ -51,13 +51,13 @@ const ResumeHeader = ({ personalInfo }) => {
           {renderSocialLink("fa fa-linkedin", linkedin, "LinkedIn", completeLink(linkedin))}
           {renderSocialLink("fa fa-github", github, "GitHub", completeLink(github))}
         </div>
-      </div>
+      </address>
     </section>
   );
 };
 
 const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone = "") => (
-  <section name="contactInfo" className="text-base md:text-lg print:text-sm flex items-center">
+  <div className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className={`inline print:hidden ${isEmail && "whitespace-nowrap"}`}>
       {isEmail ? (
@@ -71,11 +71,11 @@ const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone =
       )}
     </span>
     <span className="hidden print:inline">{content}</span>
-  </section>
+  </div>
 );
 
 const renderSocialLink = (iconClass, link, text, completeLink) => (
-  <section name="socialLink" className="text-base md:text-lg print:text-sm flex items-center">
+  <div className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className="inline print:hidden">
       <a href={completeLink} target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const renderSocialLink = (iconClass, link, text, completeLink) => (
       </a>
     </span>
     <span className="hidden print:inline">{link}</span>
-  </section>
+  </div>
 );
 
 export default ResumeHeader;
