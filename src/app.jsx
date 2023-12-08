@@ -31,6 +31,14 @@ const App = () => {
     document.documentElement.classList.toggle("dark", isDarkMode);
   };
 
+  const containerStyle = {
+    backgroundImage: `url(https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation.svg?v=1702071126869)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh", // Set the height of the container
+    // Add any additional styles as needed
+  };
+
   useEffect(() => {
     // Add event listeners for print events
     window.addEventListener("beforeprint", handlePrint);
@@ -52,12 +60,14 @@ const App = () => {
   return (
     <Router>
       <Seo />
-      <LanguageProvider>
-        <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <main className="flex flex-col min-h-screen flex-grow">
-          <PageRouter />
-        </main>
-      </LanguageProvider>
+      <main style={containerStyle}>
+        <LanguageProvider>
+          <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+          <div className="flex flex-col min-h-screen flex-grow">
+            <PageRouter />
+          </div>
+        </LanguageProvider>
+      </main>
     </Router>
   );
 };
