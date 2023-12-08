@@ -2,8 +2,7 @@ import React from "react";
 import { useLanguage } from "../hooks/LanguageContext";
 
 const ResumeHeader = ({ personalInfo }) => {
-  const { name, location, email, phone, linkedin, github } =
-    personalInfo;
+  const { name, location, email, phone, linkedin, github } = personalInfo;
   const { lang } = useLanguage();
 
   // Function to format phone number to international format without spaces and dashes
@@ -12,7 +11,7 @@ const ResumeHeader = ({ personalInfo }) => {
   };
 
   const formattedPhone = formatPhoneNumber(phone);
-  
+
   const completeLink = (incompleteLink) => {
     // Check if the link starts with 'http://' or 'https://'
     if (
@@ -41,34 +40,59 @@ const ResumeHeader = ({ personalInfo }) => {
           <h2 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
             {name}
           </h2>
-          {renderContactInfo("fa fa-map-marker", location)}
-          {renderContactInfo("fa fa-envelope", email, true)}
-          {renderContactInfo("fa fa-phone", phone, false, formattedPhone)}
+          {renderContactInfo("fa fa-map-marker", location, "location")}
+          {renderContactInfo("fa fa-envelope", email, "email")}
+          {renderContactInfo("fa fa-phone", phone, "phone", formattedPhone)}
         </div>
 
         {/* Social Links Grid */}
         <div className="flex flex-col md:self-end print:self-end print:ml-4">
-          {renderSocialLink("fa fa-linkedin", linkedin, "LinkedIn", completeLink(linkedin))}
-          {renderSocialLink("fa fa-github", github, "GitHub", completeLink(github))}
+          {renderSocialLink(
+            "fa fa-linkedin",
+            linkedin,
+            "LinkedIn",
+            completeLink(linkedin)
+          )}
+          {renderSocialLink(
+            "fa fa-github",
+            github,
+            "GitHub",
+            completeLink(github)
+          )}
         </div>
       </address>
     </section>
   );
 };
 
-const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone = "") => (
+const renderContactInfo = (
+  iconClass,
+  content,
+  linkType = "",
+  formattedPhone = ""
+) => (
   <div className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
-    <span className={`inline print:hidden ${isEmail && "whitespace-nowrap"}`}>
-      {isEmail ? (
+    <span
+      className={`inline print:hidden ${
+        linkType === "email" && "whitespace-nowrap"
+      }`}
+    >
+      {linkType === "email" ? (
         <a href={`mailto:${content}`} target="_blank" rel="noopener noreferrer">
           {content}
         </a>
-      ) : (
-        <a href={`https://wa.me/${formattedPhone}`} target="_blank" rel="noopener noreferrer">
+      ) : null}
+
+      {linkType === "phone" ? (
+        <a
+          href={`https://wa.me/${formattedPhone}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {content}
         </a>
-      )}
+      ) : null}
     </span>
     <span className="hidden print:inline">{content}</span>
   </div>
