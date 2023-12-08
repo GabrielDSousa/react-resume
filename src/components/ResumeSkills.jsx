@@ -40,10 +40,10 @@ const ResumeSkills = ({ skills }) => {
   );
 
   return (
-    <div>
-      <div className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
+    <section name="skills">
+      <h1 className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
         {lang === "pt" ? "Conhecimentos" : "Skills"}
-      </div>
+      </h1>
 
       {renderList({ pt: "Linguagens de programação", en: "Program Languages" }, languages)}
       {renderList({ pt: "Frameworks", en: "Frameworks" }, frameworks)}
@@ -52,7 +52,7 @@ const ResumeSkills = ({ skills }) => {
       {renderLanguageProficiency()}
       {lang !== "pt" && renderList({ pt: "Interesses", en: "Interests" }, interests)}
       {renderList({ pt: "Conquistas", en: "Achievements" }, achievements)}
-    </div>
+    </section>
   );
 };
 

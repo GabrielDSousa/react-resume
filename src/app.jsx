@@ -54,13 +54,9 @@ const App = () => {
       <Seo />
       <LanguageProvider>
         <PageMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <div className="flex flex-col min-h-screen">
-          <div className="flex-grow">
-            <div>
-              <PageRouter />
-            </div>
-          </div>
-        </div>
+        <main className="flex flex-col min-h-screen flex-grow">
+          <PageRouter />
+        </main>
       </LanguageProvider>
     </Router>
   );
