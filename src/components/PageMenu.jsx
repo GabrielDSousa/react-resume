@@ -7,11 +7,11 @@ import PrintButton from "./PrintButton";
 const PageMenu = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <div className="p-4 mb-4 print:hidden">
-      <div className="flex justify-around items-center">
+      <div className="flex justify-between items-center">
         <div>
           <LanguageToggle />
         </div>
-        <div className="flex">
+        <div className="flex space-x-4">
           <PrintButton isDarkMode={isDarkMode} />
           <DarkModeToggle
             isDarkMode={isDarkMode}

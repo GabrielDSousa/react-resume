@@ -13,7 +13,7 @@ const PrintButton = ({ isDarkMode }) => {
       onClick={handlePrint}
     >
       <div className="w-8 h-8 flex items-center justify-center">
-        <i class="fa fa-print"></i>
+        <i className="fa fa-print" aria-hidden="true"></i>
       </div>
     </button>
   );
