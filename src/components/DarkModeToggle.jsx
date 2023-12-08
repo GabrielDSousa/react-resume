@@ -7,7 +7,7 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     <button id="toggleDarkMode" className={buttonClasses} onClick={toggleDarkMode}>
-      <label for="toggleDarkMode" className="w-8 h-8 flex items-center justify-center">
+      <label className="w-8 h-8 flex items-center justify-center">
         {isDarkMode ? (
           <DarkModeIcon />
         ) : (
