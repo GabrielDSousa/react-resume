@@ -93,6 +93,17 @@ const renderContactInfo = (
           {content}
         </a>
       ) : null}
+      
+      {linkType === "location" ? (
+        <a
+          href={`https://www.google.com/maps/place/21°45'50.8"S+43°21'01.8"W/@-21.7376401,-43.4402377,11.5z/data=!4m4!3m3!8m2!3d-21.7641!4d-43.3505?entry=ttu`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {content}
+        </a>
+      ) : null}
+
     </span>
     <span className="hidden print:inline">{content}</span>
   </div>
