@@ -50,7 +50,7 @@ const ResumeSkills = ({ skills }) => {
       {renderList({ pt: "Banco de dados", en: "Databases" }, databases)}
       {renderList({ pt: "Ferramentas", en: "Tools" }, tools)}
       {renderLanguageProficiency()}
-      {lang !== "pt" && renderList({ pt: "Interesses", en: "Interests" }, interests)}
+      <span className="print:hidden">{renderList({ pt: "Interesses", en: "Interests" }, interests)}</span>
       {renderList({ pt: "Conquistas", en: "Achievements" }, achievements)}
     </section>
   );
