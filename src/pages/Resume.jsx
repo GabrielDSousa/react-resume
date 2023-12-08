@@ -15,7 +15,7 @@ const Resume = () => {
   const translated = lang === "pt" ? Portuguese : English;
 
   return (
-    <section name="a4-resume" className="max-w-[210mm] mx-auto">
+    <article name="a4-resume" className="max-w-[210mm] mx-auto">
       <ResumeHeader personalInfo={translated.personalInfo} />
       <ProfessionalSummary professionalSummary={translated.professionalSummary} />
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 print:grid print:grid-cols-3 print:gap-4">
@@ -28,7 +28,7 @@ const Resume = () => {
         </div>
       </div>
       <ResumeCertifications certifications={translated.certifications} />
-    </section>
+    </article>
   );
 };
 

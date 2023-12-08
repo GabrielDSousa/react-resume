@@ -14,7 +14,7 @@ const ResumeSkills = ({ skills }) => {
   const { lang } = useLanguage();
 
   const renderList = (title, list) => (
-    <div className="mb-6 print:mb-3">
+    <section name='${}' className="mb-6 print:mb-3">
       <h2 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
         {lang === "pt" ? title.pt : title.en}
       </h2>
@@ -23,7 +23,7 @@ const ResumeSkills = ({ skills }) => {
           <li key={index}>{item}</li>
         ))}
       </ul>
-    </div>
+    </disectionv>
   );
 
   const renderLanguageProficiency = () => (
