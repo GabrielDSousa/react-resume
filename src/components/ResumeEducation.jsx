@@ -15,7 +15,7 @@ const ResumeEducation = ({ education }) => {
             {edu.institution}
           </h2>
           <div className="text-lime-800 dark:text-lime-300">{edu.location}</div>
-          <div className="text-lime-800 dark:text-lime-300">{edu.date}</div>
+          <time className="text-lime-800 dark:text-lime-300">{edu.date}</time>
           <p className="mb-2 print:mb-1">{edu.degree}</p>
           <p>{lang === "pt" ? "Matérias relevantes" : "Relevant classes"}</p>
           <ul className="list-disc pl-6 print:pl-3">

@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../hooks/LanguageContext";
 
 const ResumeHeader = ({ personalInfo }) => {
-  const { name, title, location, email, phone, linkedin, github } =
+  const { name, location, email, phone, linkedin, github } =
     personalInfo;
   const { lang } = useLanguage();
 
@@ -14,7 +14,7 @@ const ResumeHeader = ({ personalInfo }) => {
   const formattedPhone = formatPhoneNumber(phone);
 
   return (
-    <div className="mb-8 print:mb-4 flex items-center p-4">
+    <header className="mb-8 print:mb-4 flex items-center p-4">
       {/* Profile Picture with Shadow */}
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275"
@@ -25,10 +25,9 @@ const ResumeHeader = ({ personalInfo }) => {
       <div className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
-          <div className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
+          <h1 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
             {name}
-          </div>
-          <div className="text-base md:text-lg print:text-sm">{title}</div>
+          </h1>
           {renderContactInfo("fa fa-map-marker", location)}
           {renderContactInfo("fa fa-envelope", email, true)}
           {renderContactInfo("fa fa-phone", phone, false, formattedPhone)}
@@ -40,7 +39,7 @@ const ResumeHeader = ({ personalInfo }) => {
           {renderSocialLink("fa fa-github", github, "GitHub")}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
