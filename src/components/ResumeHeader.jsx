@@ -38,9 +38,9 @@ const ResumeHeader = ({ personalInfo }) => {
       <div className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
-          <h1 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
+          <h2 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
             {name}
-          </h1>
+          </h2>
           {renderContactInfo("fa fa-map-marker", location)}
           {renderContactInfo("fa fa-envelope", email, true)}
           {renderContactInfo("fa fa-phone", phone, false, formattedPhone)}

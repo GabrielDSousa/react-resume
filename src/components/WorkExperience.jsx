@@ -20,20 +20,20 @@ const WorkExperience = ({ experience }) => {
 
   return (
     <section name="experience" className="mb-8 print:mb-4 p-4">
-      <h1 className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
+      <h2 className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
         {lang === "pt" ? "Experiência profissional" : "Work Experience"}
-      </h1>
+      </h2>
       {experience.map((job, index) => (
-        <div key={index} className="mb-6 print:mb-3">
-          <h2 className="text-lg print:text-sm text-lime-800 dark:text-lime-500 font-bold mb-2 print:mb-1">
+        <section name={`experience-${index}`} key={index} className="mb-6 print:mb-3">
+          <h3 className="text-lg print:text-sm text-lime-800 dark:text-lime-500 font-bold mb-2 print:mb-1">
             {job.title}
-          </h2>
+          </h3>
           <div className="text-lime-600">
             {`${job.company} - ${job.location} | ${job.date}`}
           </div>
           {renderDescription(job.description, index >= 4)}
           {job.milestones && renderMilestones(job.milestones, index >= 4)}
-        </div>
+        </section>
       ))}
     </section>
   );

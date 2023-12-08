@@ -14,36 +14,36 @@ const ResumeSkills = ({ skills }) => {
   const { lang } = useLanguage();
 
   const renderList = (title, list) => (
-    <section name='${}' className="mb-6 print:mb-3">
-      <h2 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
+    <section name={`skills-${title}`} className="mb-6 print:mb-3">
+      <h3 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
         {lang === "pt" ? title.pt : title.en}
-      </h2>
+      </h3>
       <ul className="list-disc pl-6 print:pl-3">
         {list.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
-    </disectionv>
+    </section>
   );
 
   const renderLanguageProficiency = () => (
-    <div className="mb-6 print:mb-3">
-      <h2 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
+    <section name="skills-proficiency" className="mb-6 print:mb-3">
+      <h3 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
         {lang === "pt" ? "Proficiência em língua" : "Language proficiency"}
-      </h2>
+      </h3>
       <ul className="list-disc pl-6 print:pl-3">
         {Object.entries(languagesLevel).map(([lang, level], index) => (
           <li key={index}>{`${lang}: ${level}`}</li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 
   return (
     <section name="skills">
-      <h1 className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
+      <h2 className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
         {lang === "pt" ? "Conhecimentos" : "Skills"}
-      </h1>
+      </h2>
 
       {renderList({ pt: "Linguagens de programação", en: "Program Languages" }, languages)}
       {renderList({ pt: "Frameworks", en: "Frameworks" }, frameworks)}
