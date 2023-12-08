@@ -4,6 +4,20 @@ import { useLanguage } from "../hooks/LanguageContext";
 const WorkExperience = ({ experience }) => {
   const { lang } = useLanguage();
 
+  const renderDescription = (description, hidden) => (
+    <p className={`mb-2 print:mb-1 ${hidden && "print:hidden"}`}>
+      {description}
+    </p>
+  );
+
+  const renderMilestones = (milestones, hidden) => (
+    <ul className={`list-disc pl-6 print:pl-3 ${hidden && "print:hidden"}`}>
+      {milestones.map((milestone, index) => (
+        <li key={index}>{milestone}</li>
+      ))}
+    </ul>
+  );
+
   return (
     <div className="mb-8 print:mb-4 p-4">
       <div className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
@@ -15,22 +29,10 @@ const WorkExperience = ({ experience }) => {
             {job.title}
           </div>
           <div className="text-lime-600">
-            {job.company} - {job.location} | {job.date}
+            {`${job.company} - ${job.location} | ${job.date}`}
           </div>
-          <p className={`mb-2 print:mb-1 ${index >= 4 && "print:hidden"}`}>
-            {job.description}
-          </p>
-          {job.milestones && (
-            <ul
-              className={`list-disc pl-6 print:pl-3 ${
-                index >= 4 && "print:hidden"
-              }`}
-            >
-              {job.milestones.map((milestone, i) => (
-                <li key={i}>{milestone}</li>
-              ))}
-            </ul>
-          )}
+          {renderDescription(job.description, index >= 4)}
+          {job.milestones && renderMilestones(job.milestones, index >= 4)}
         </div>
       ))}
     </div>

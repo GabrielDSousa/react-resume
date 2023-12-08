@@ -14,10 +14,10 @@ const ResumeHeader = ({ personalInfo }) => {
   const formattedPhone = formatPhoneNumber(phone);
 
   return (
-    <div className="mb-8 print:mb-4 flex items-center p-4 ">
+    <div className="mb-8 print:mb-4 flex items-center p-4">
       {/* Profile Picture with Shadow */}
       <img
-        src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275" // Update the path to your image
+        src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275"
         alt="Profile"
         className="rounded-full object-cover h-20 w-20 md:h-32 md:w-32 print:h-32 print:w-32 mr-4 print:mr-2 shadow-md shadow-lime-500 drop-shadow-2xl print:drop-shadow-xl"
       />
@@ -29,68 +29,49 @@ const ResumeHeader = ({ personalInfo }) => {
             {name}
           </div>
           <div className="text-base md:text-lg print:text-sm">{title}</div>
-          <div className="text-base md:text-lg print:text-sm flex items-center">
-            <i className="fa fa-map-marker pl-1 pr-3 print:pr-0.5 print:pr-1.5"></i>
-            {location}
-          </div>
-          <div className="text-base md:text-lg print:text-sm flex items-center">
-            <i className="fa fa-envelope pr-2 print:pr-1"></i>
-            <span className="inline print:hidden">
-              <a
-                href={`mailto:${email}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {email}
-              </a>
-            </span>
-            <span className="hidden print:inline">{email}</span>
-          </div>
-          <div className="text-base md:text-lg print:text-sm flex items-center">
-            <i className="fa fa-phone pr-2 print:pr-1"></i>
-            <span className="inline print:hidden">
-              <a
-                href={`https://wa.me/${formattedPhone}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {phone}
-              </a>
-            </span>
-            <span className="hidden print:inline">{phone}</span>
-          </div>
+          {renderContactInfo("fa fa-map-marker", location)}
+          {renderContactInfo("fa fa-envelope", email, true)}
+          {renderContactInfo("fa fa-phone", phone, false, formattedPhone)}
         </div>
 
         {/* Social Links Grid */}
         <div className="flex flex-col md:self-end print:self-end print:ml-4">
-          <div className="text-base md:text-lg print:text-sm flex items-center">
-            <i className="fa fa-linkedin pr-2 print:pr-1"></i>
-            <span className="inline print:hidden">
-              <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                LinkedIn
-              </a>
-            </span>
-            <span className="hidden print:inline">
-              {`linkedin.com/in/GabrielDSousa${
-                lang === "pt" ? "" : "/?locale=en_US"
-              }`}
-            </span>
-          </div>
-          <div className="text-base md:text-lg print:text-sm flex items-center">
-            <i className="fa fa-github pr-2 print:pr-1"></i>
-            <span className="inline print:hidden">
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </span>
-            <span className="hidden print:inline">
-              github.com/GabrielDSousa
-            </span>
-          </div>
+          {renderSocialLink("fa fa-linkedin", linkedin, "LinkedIn")}
+          {renderSocialLink("fa fa-github", github, "GitHub")}
         </div>
       </div>
     </div>
   );
 };
+
+const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone = "") => (
+  <div className="text-base md:text-lg print:text-sm flex items-center">
+    <i className={`${iconClass} pr-2 print:pr-1`}></i>
+    <span className={`inline print:hidden ${isEmail && "whitespace-nowrap"}`}>
+      {isEmail ? (
+        <a href={`mailto:${content}`} target="_blank" rel="noopener noreferrer">
+          {content}
+        </a>
+      ) : (
+        <a href={`https://wa.me/${formattedPhone}`} target="_blank" rel="noopener noreferrer">
+          {content}
+        </a>
+      )}
+    </span>
+    <span className="hidden print:inline">{content}</span>
+  </div>
+);
+
+const renderSocialLink = (iconClass, link, text) => (
+  <div className="text-base md:text-lg print:text-sm flex items-center">
+    <i className={`${iconClass} pr-2 print:pr-1`}></i>
+    <span className="inline print:hidden">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        {text}
+      </a>
+    </span>
+    <span className="hidden print:inline">{link}</span>
+  </div>
+);
 
 export default ResumeHeader;
