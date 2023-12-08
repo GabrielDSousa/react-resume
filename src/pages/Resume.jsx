@@ -18,11 +18,11 @@ const Resume = () => {
     <section name="a4-resume" className="max-w-[210mm] mx-auto">
       <ResumeHeader personalInfo={translated.personalInfo} />
       <ProfessionalSummary professionalSummary={translated.professionalSummary} />
-      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 print:grid print:grid-cols-3 print:gap-4">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4">
         <div className="col-span-2">
           <WorkExperience experience={translated.workExperience} />
         </div>
-        <div className="h-full bg-lime-400 bg-opacity-20 flex flex-col justify-between px-4 pt-4 pb-16">
+        <div className="bg-lime-400 bg-opacity-20 flex flex-col px-4 pt-4 pb-16">
           <ResumeEducation education={translated.education} />
           <ResumeSkills skills={translated.skills} />
         </div>
