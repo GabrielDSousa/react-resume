@@ -4,12 +4,12 @@ const ProfessionalSummary = ({ professionalSummary }) => {
   const { title, summary } = professionalSummary;
 
   return (
-    <div className="mb-8 print:mb-4 p-4">
-      <div className="text-2xl print:text-base font-bold mb-2 print:mb-1 text-lime-950 dark:text-lime-500">
+    <section name="summary" className="mb-8 print:mb-4 p-4">
+      <h1 className="text-2xl print:text-base font-bold mb-2 print:mb-1 text-lime-950 dark:text-lime-500">
         {title}
-      </div>
+      </h1>
       <p>{summary}</p>
-    </div>
+    </section>
   );
 };
 

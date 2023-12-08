@@ -19,8 +19,8 @@ const WorkExperience = ({ experience }) => {
   );
 
   return (
-    <div className="mb-8 print:mb-4 p-4">
-      <div className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
+    <section name="experience" className="mb-8 print:mb-4 p-4">
+      <h1 className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
         {lang === "pt" ? "Experiência profissional" : "Work Experience"}
       </div>
       {experience.map((job, index) => (
@@ -35,7 +35,7 @@ const WorkExperience = ({ experience }) => {
           {job.milestones && renderMilestones(job.milestones, index >= 4)}
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

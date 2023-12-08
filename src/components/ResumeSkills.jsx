@@ -15,9 +15,9 @@ const ResumeSkills = ({ skills }) => {
 
   const renderList = (title, list) => (
     <div className="mb-6 print:mb-3">
-      <div className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
+      <h2 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
         {lang === "pt" ? title.pt : title.en}
-      </div>
+      </h2>
       <ul className="list-disc pl-6 print:pl-3">
         {list.map((item, index) => (
           <li key={index}>{item}</li>
@@ -28,9 +28,9 @@ const ResumeSkills = ({ skills }) => {
 
   const renderLanguageProficiency = () => (
     <div className="mb-6 print:mb-3">
-      <div className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
+      <h2 className="text-lg print:text-sm text-lime-800 font-bold mb-2 print:mb-1 dark:text-lime-300">
         {lang === "pt" ? "Proficiência em língua" : "Language proficiency"}
-      </div>
+      </h2>
       <ul className="list-disc pl-6 print:pl-3">
         {Object.entries(languagesLevel).map(([lang, level], index) => (
           <li key={index}>{`${lang}: ${level}`}</li>

@@ -44,7 +44,7 @@ const ResumeHeader = ({ personalInfo }) => {
 };
 
 const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone = "") => (
-  <div className="text-base md:text-lg print:text-sm flex items-center">
+  <section name="contactInfo" className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className={`inline print:hidden ${isEmail && "whitespace-nowrap"}`}>
       {isEmail ? (
@@ -58,11 +58,11 @@ const renderContactInfo = (iconClass, content, isEmail = false, formattedPhone =
       )}
     </span>
     <span className="hidden print:inline">{content}</span>
-  </div>
+  </section>
 );
 
 const renderSocialLink = (iconClass, link, text) => (
-  <div className="text-base md:text-lg print:text-sm flex items-center">
+  <section name="socialLink" className="text-base md:text-lg print:text-sm flex items-center">
     <i className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className="inline print:hidden">
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -70,7 +70,7 @@ const renderSocialLink = (iconClass, link, text) => (
       </a>
     </span>
     <span className="hidden print:inline">{link}</span>
-  </div>
+  </section>
 );
 
 export default ResumeHeader;
