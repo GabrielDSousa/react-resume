@@ -26,7 +26,7 @@ const ResumeHeader = ({ personalInfo }) => {
   };
 
   return (
-    <section name="header" className="mb-8 print:mb-4 flex items-center p-4">
+    <section aria-labelledby="header-heading" className="mb-8 print:mb-4 flex items-center p-4">
       {/* Profile Picture with Shadow */}
       <img
         src="https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275"
@@ -37,7 +37,7 @@ const ResumeHeader = ({ personalInfo }) => {
       <address className="flex flex-col md:flex-row print:flex-row">
         {/* Text Block */}
         <div className="print:ml-4">
-          <h2 className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
+          <h2 id="header-heading" className="text-xl md:text-3xl print:text-base font-bold pb-2 md:pb-4 print:pb-2">
             {name}
           </h2>
           {renderContactInfo("fa fa-map-marker", location, "location")}
@@ -72,14 +72,14 @@ const renderContactInfo = (
   formattedPhone = ""
 ) => (
   <div className="text-base md:text-lg print:text-sm flex items-center">
-    <i className={`${iconClass} pr-2 print:pr-1`}></i>
+    <i aria-hidden="true" className={`${iconClass} pr-2 print:pr-1`}></i>
     <span
       className={`inline print:hidden ${
         linkType === "email" && "whitespace-nowrap"
       }`}
     >
       {linkType === "email" ? (
-        <a href={`mailto:${content}`} target="_blank" rel="noopener noreferrer">
+        <a href={`mailto:${content}`} target="_blank" rel="noopener noreferrer" aria-label={`Email: ${content}`}>
           {content}
         </a>
       ) : null}
@@ -89,6 +89,7 @@ const renderContactInfo = (
           href={`https://wa.me/${formattedPhone}`}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Phone: ${content}`}
         >
           {content}
         </a>
@@ -99,6 +100,7 @@ const renderContactInfo = (
           href={`https://www.google.com/maps/place/21°45'50.8"S+43°21'01.8"W/@-21.7376401,-43.4402377,11.5z/data=!4m4!3m3!8m2!3d-21.7641!4d-43.3505?entry=ttu`}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Location: ${content}`}
         >
           {content}
         </a>
@@ -111,9 +113,9 @@ const renderContactInfo = (
 
 const renderSocialLink = (iconClass, link, text, completeLink) => (
   <div className="text-base md:text-lg print:text-sm flex items-center">
-    <i className={`${iconClass} pr-2 print:pr-1`}></i>
+    <i aria-hidden="true" className={`${iconClass} pr-2 print:pr-1`}></i>
     <span className="inline print:hidden">
-      <a href={completeLink} target="_blank" rel="noopener noreferrer">
+      <a href={completeLink} target="_blank" rel="noopener noreferrer" aria-label={`${text} Profile`}>
         {text}
       </a>
     </span>
