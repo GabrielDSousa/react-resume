@@ -1,6 +1,6 @@
 # Gabriel's Resume Website
 
-![Resume site](https://gabrieldsousa.glitch.me)
+[Resume site](https://gabrieldsousa.glitch.me)
 
 ## Overview
 
