@@ -1,6 +1,7 @@
 {
-  "title": "GabrielDSousa Resume",
-  "description": "A simple React single page app, built with Glitch. To show my resume to the world",
-  "url": "glitch-default",
-  "image": "https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275"
+  "title": "GabrielDSousa - PHP Full-Stack Developer Resume",
+  "description": "Experienced PHP full-stack developer showcasing skills in web development, backend, and frontend technologies.",
+  "url": "https://gabrieldsousa.glitch.me",
+  "image": "https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/profile.jpg?v=1701548945275",
+  "keywords": ["PHP", "Full-Stack Developer", "Web Development", "JavaScript", "React", "MySQL", "HTML", "CSS", "Laravel", "Vue.js", "Vue", "Vue3"]
 }
