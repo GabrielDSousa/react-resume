@@ -28,7 +28,7 @@ const LanguageToggle = () => {
   };
 
   return (
-    <div className="flex rounded-full p-4 bg-lime-950">
+    <nav aria-label="Language Selector" className="flex rounded-full p-4 bg-lime-950">
       <ToggleButton
         onClick={() => toggleLanguage("en")}
         isActive={lang === "en"}
@@ -40,7 +40,7 @@ const LanguageToggle = () => {
         isActive={lang === "pt"}
         label={lang === "en" ? "Portuguese" : "Português"}
       />
-    </div>
+    </nav>
   );
 };
 
@@ -52,6 +52,7 @@ const ToggleButton = ({ onClick, isActive, label, extraClass }) => (
         ? "bg-lime-500 text-neutral-50 transition-transform transform scale-105"
         : "bg-gray-200 text-neutral-950 transition-transform transform scale-100"
     }`}
+    aria-pressed={isActive}
   >
     {label}
   </button>

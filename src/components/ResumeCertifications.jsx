@@ -5,8 +5,8 @@ const ResumeCertifications = ({ certifications }) => {
   const { lang } = useLanguage();
 
   return (
-    <section name="certifications" className="mb-8 print:mb-4 p-4">
-      <h2 className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
+    <section aria-labelledby="certifications" className="mb-8 print:mb-4 p-4">
+      <h2 id="certifications" className="text-2xl print:text-base font-bold mb-4 print:mb-2 text-lime-950 dark:text-lime-400">
         {lang === "pt" ? "Certificados" : "Certifications"}
       </h2>
       {certifications.map((cert, index) => (

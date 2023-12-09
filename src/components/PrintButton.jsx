@@ -12,7 +12,9 @@ const PrintButton = ({ isDarkMode }) => {
         isDarkMode ? "dark:border-lime-50 dark:bg-lime-800" : "bg-lime-50"
       } transform transition-transform hover:scale-110 focus:outline-none focus:ring focus:border-lime-300`}
       onClick={handlePrint}
+      aria-label="Print"
     >
+      <span className="sr-only">Print</span>
       <label className="w-8 h-8 flex items-center justify-center">
         <i className="fa fa-print" aria-hidden="true"></i>
       </label>

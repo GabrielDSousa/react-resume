@@ -5,8 +5,8 @@ const ResumeEducation = ({ education }) => {
   const { lang } = useLanguage();
 
   return (
-    <section name="education">
-      <h2 className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
+    <section aria-labelledby="education" className="mb-8 print:mb-4">
+      <h2 id="education" className="text-2xl print:text-base text-lime-950 font-bold mb-4 print:mb-2 dark:text-lime-400">
         {lang === "pt" ? "Educação" : "Education"}
       </h2>
       {education.map((edu, index) => (
