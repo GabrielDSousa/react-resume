@@ -32,13 +32,13 @@ const LanguageToggle = () => {
       <ToggleButton
         onClick={() => toggleLanguage("en")}
         isActive={lang === "en"}
-        label="English"
+        label={lang === "pt" ? "Inglês" : "English"}
         extraClass="mr-2"
       />
       <ToggleButton
         onClick={() => toggleLanguage("pt")}
         isActive={lang === "pt"}
-        label="Portuguese"
+        label={lang === "en" ? "Portuguese" : "Português"}
       />
     </div>
   );
@@ -48,7 +48,9 @@ const ToggleButton = ({ onClick, isActive, label, extraClass }) => (
   <button
     onClick={onClick}
     className={`px-4 py-2 rounded-full ${extraClass} ${
-      isActive ? "bg-lime-500 text-neutral-50" : "bg-gray-200 text-neutral-950"
+      isActive
+        ? "bg-lime-500 text-neutral-50 transition-transform transform scale-105"
+        : "bg-gray-200 text-neutral-950 transition-transform transform scale-100"
     }`}
   >
     {label}

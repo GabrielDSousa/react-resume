@@ -10,14 +10,15 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       id="toggleDarkMode"
       className={buttonClasses}
       onClick={toggleDarkMode}
+      aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
     >
-      <label className="w-8 h-8 flex items-center justify-center">
+      <span className="w-8 h-8 flex items-center justify-center">
         {isDarkMode ? (
           <DarkModeIcon />
         ) : (
           <LightModeIcon />
         )}
-      </label>
+      </span>
     </button>
   );
 };
