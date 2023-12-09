@@ -43,3 +43,54 @@ const LightModeIcon = () => (
 );
 
 export default DarkModeToggle;
+
+
+import React from "react";
+
+const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
+  const buttonClasses = `p-2 rounded-full border transition ${
+    isDarkMode ? "dark:border-lime-50 dark:bg-lime-800" : "bg-lime-50"
+  }`;
+
+  return (
+    <button
+      id="toggleDarkMode"
+      className={buttonClasses}
+      onClick={toggleDarkMode}
+    >
+      <label className="w-8 h-8 flex items-center justify-center">
+        {isDarkMode ? (
+          <DarkModeIcon />
+        ) : (
+          <LightModeIcon />
+        )}
+      </label>
+    </button>
+  );
+};
+
+const DarkModeIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="16"
+    width="16"
+    viewBox="0 0 512 512"
+    fill="#facc15"
+  >
+    {/* Dark mode icon SVG path */}
+  </svg>
+);
+
+const LightModeIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="16"
+    width="12"
+    viewBox="0 0 384 512"
+    fill="#0a0a0a"
+  >
+    {/* Light mode icon SVG path */}
+  </svg>
+);
+
+export default DarkModeToggle;

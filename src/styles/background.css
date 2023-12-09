@@ -4,7 +4,7 @@ html.dark {
 }
 
 html:not(.dark) {
-  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/scattered-forcefields.svg?v=1702081590829");
+  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/scattered-forcefields.svg?v=1702081947963");
   --background-size: cover;
 }
 
@@ -15,34 +15,10 @@ html:not(.dark) {
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
-  height: 100vh;
-}
-
-.background::before {
-  content: ""; /* Create a pseudo-element to fill the entire height */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; /* Place it behind the content */
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200%; /* Increase the height to create parallax effect */
-  transform-origin: center top;
-  transform: translate3d(0, 0, 0); /* Ensure hardware acceleration for smoother performance */
-}
-
-main {
-  position: relative;
-  z-index: 1; /* Ensure the content appears above the background */
 }
 
 @media print {
-  .background,
-  .background::before {
+  .background {
     background-image: none; /* Remove background image for printing */
     background-color: white; /* Set plain white background for printing */
   }
