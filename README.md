@@ -1,6 +1,7 @@
 # Gabriel's Resume Website
 
-[Resume site](https://gabrieldsousa.glitch.me){:target="_blank"}
+[Resume site](https:///gabrieldsousa.glitch.me){:target="_blank"}
+
 
 ## Overview
 
