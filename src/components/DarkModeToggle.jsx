@@ -1,7 +1,7 @@
 import React from "react";
 
 const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
-  const buttonClasses = `p-2 rounded-full border transition ${
+  const buttonClasses = `p-2 rounded-full border transition transform transition-transform hover:scale-110 focus:outline-none focus:ring focus:border-lime-300 ${
     isDarkMode ? "dark:border-lime-50 dark:bg-lime-800" : "bg-lime-50"
   }`;
 
