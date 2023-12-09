@@ -4,8 +4,8 @@ html.dark {
 }
 
 html:not(.dark) {
-  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/radiant-gradient.svg?v=1702075042421");
-  --background-size: cover;
+  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/scattered-forcefields.svg?v=1702081947963");
+  --background-size: auto;
 }
 
 .background {
@@ -17,43 +17,23 @@ html:not(.dark) {
   background-attachment: fixed;
 }
 
-@media print {
-  .background {
-    background-image: none; /* Remove background image for printing */
-    background-color: white; /* Set plain white background for printing */
-  }
-
-  @page {
-    size: auto;
-    margin: 5mm; /* Default margin for all pages */
-  }
-}
-
-
-/* styles.css */
-
-html.dark {
-  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/endless-constellation-dark.svg?v=1702073310062");
-  --background-size: auto;
-}
-
-html:not(.dark) {
-  --background-image: url("https://cdn.glitch.global/f314574e-92fa-4a70-b3ec-f94c4bb038fc/radiant-gradient.svg?v=1702075042421");
-  --background-size: cover;
-}
-
-.background {
-  background-image: var(--background-image);
-  background-size: var(--background-size);
-  background-color: #0A0A0A;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Add parallax effect to the background */
-}
-
-.content {
+main {
   position: relative;
   z-index: 1; /* Ensure the content appears above the background */
+}
+
+/* Add parallax effect to the background */
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-size: inherit;
+  z-index: -1; /* Place the pseudo-element below the content */
+  transform: translateZ(-1px) scale(1.2); /* Adjust scale for parallax effect */
 }
 
 @media print {
