@@ -9,22 +9,33 @@ html:not(.dark) {
 }
 
 .background {
-  background-image: var(--background-image);
-  background-size: var(--background-size);
+  position: relative;
   background-color: #0A0A0A;
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
 }
 
-@media print {
-  .background {
-    background-image: none; /* Remove background image for printing */
-    background-color: white; /* Set plain white background for printing */
-  }
+.background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: var(--background-size);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 
-  @page {
-    size: auto;
-    margin: 5mm; /* Default margin for all pages */
+@media print {
+  .background::before {
+    background-image: none;
+    background-color: white;
   }
+}
+
+.dark .background::before {
+  opacity: 0;
 }
